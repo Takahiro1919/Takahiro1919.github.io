@@ -4,334 +4,496 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>テレビゲーム 売れ筋ランキング｜今週の売れ筋ランキング</title>
-<meta name="description" content="楽天市場のテレビゲームジャンルで今売れている商品ランキング。順位変動つきで毎日自動更新。">
+<meta name="description" content="楽天市場のテレビゲームジャンルで今売れている商品ランキングTOP30。順位変動つきで毎日自動更新。">
+<link rel="canonical" href="https://takahiro1919.github.io/genre/101205.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="今週の売れ筋ランキング">
+<meta property="og:title" content="テレビゲーム 売れ筋ランキング">
+<meta property="og:description" content="楽天市場のテレビゲームジャンルで今売れている商品ランキングTOP30。順位変動つきで毎日自動更新。">
+<meta property="og:url" content="https://takahiro1919.github.io/genre/101205.html">
+<meta property="og:image" content="https://thumbnail.image.rakuten.co.jp/@0_mall/auc-worldichi/cabinet/13/4948872417419.jpg?_ex=300x300">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23bf0000'/%3E%3Ctext x='32' y='44' font-size='36' font-family='sans-serif' font-weight='700' fill='%23fff' text-anchor='middle'%3E1%3C/text%3E%3C/svg%3E">
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
-         background: #f5f5f7; color: #222; line-height: 1.5; }
-  a { color: inherit; }
-  header { background: #bf0000; color: #fff; padding: 18px 16px; text-align: center; }
-  header h1 { font-size: 22px; } header h1 a { text-decoration: none; }
-  header p { font-size: 13px; opacity: .9; margin-top: 4px; }
-  .pr { background: #fff3cd; color: #664d03; font-size: 12px; text-align: center; padding: 6px; }
-  .demo { background: #cfe2ff; color: #084298; font-size: 13px; text-align: center; padding: 8px; }
-  nav { background: #fff; border-bottom: 1px solid #e5e5e5; overflow-x: auto; white-space: nowrap;
-        padding: 8px 12px; -webkit-overflow-scrolling: touch; }
-  nav a { display: inline-block; font-size: 13px; padding: 5px 11px; margin-right: 6px;
-          border-radius: 16px; background: #f0f0f2; text-decoration: none; }
-  nav a.on, nav a:hover { background: #bf0000; color: #fff; }
-  main { max-width: 900px; margin: 0 auto; padding: 16px; }
-  h2 { font-size: 18px; margin: 18px 0 10px; border-left: 5px solid #bf0000; padding-left: 8px; }
-  .lead { font-size: 13px; color: #555; background: #fff; border-radius: 8px; padding: 10px 12px;
-          margin-bottom: 12px; }
-  .updated { font-size: 12px; color: #666; text-align: right; margin-bottom: 8px; }
-  .card { display: flex; gap: 12px; background: #fff; border-radius: 10px; padding: 12px;
-          margin-bottom: 10px; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
-  .card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.15); }
-  .rank { font-weight: bold; color: #bf0000; min-width: 44px; font-size: 15px; }
-  .rank small { display: block; font-size: 11px; font-weight: normal; margin-top: 2px; }
-  .up { color: #d9480f; } .down { color: #1971c2; } .new { color: #2b8a3e; } .same { color: #999; }
-  .thumb img, .noimg { width: 90px; height: 90px; object-fit: contain; background: #fafafa;
-                       border-radius: 6px; }
-  .noimg { display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 11px; }
-  .info { flex: 1; min-width: 0; }
-  .name { font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical; overflow: hidden; }
-  .price { color: #bf0000; font-weight: bold; font-size: 16px; margin-top: 6px; }
-  .meta { font-size: 12px; color: #888; margin-top: 2px; }
-  .badge { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px;
-           background: #ffe8cc; color: #d9480f; margin-left: 6px; }
-  .badge.streak { background: #fff3bf; color: #a07800; }
-  .badge.genre { background: #e7f5ff; color: #1971c2; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
-  .grid a { background: #fff; border-radius: 8px; padding: 10px; font-size: 13px;
-            text-decoration: none; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
-  .grid a:hover { background: #bf0000; color: #fff; }
-  .more { display: block; text-align: center; margin: 8px 0 16px; font-size: 14px; }
-  footer { text-align: center; font-size: 12px; color: #888; padding: 24px 16px; }
+:root{--red:#bf0000;--red-d:#9a0000;--ink:#1a1a1a;--sub:#666;--line:#e5e5e5;--bg:#f4f4f4;
+--gold:#e0a800;--silver:#8e97a8;--bronze:#b5733a;--up:#d9480f;--down:#1971c2;--new:#2b8a3e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;overflow-x:hidden}
+body{overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;
+background:var(--bg);color:var(--ink);line-height:1.55;font-size:15px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.pr{background:#fff8e1;color:#7a5a00;font-size:11px;text-align:center;padding:5px 8px}
+.top{background:var(--red);color:#fff}
+.top .in{max-width:1080px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{font-size:20px;font-weight:800;letter-spacing:.02em;display:flex;align-items:center;gap:8px;color:#fff}
+.logo .mark{background:#fff;color:var(--red);border-radius:6px;width:30px;height:30px;display:inline-flex;
+align-items:center;justify-content:center;font-size:17px;font-weight:900}
+.tag{font-size:12px;color:#fff;opacity:.9}
+.upd{margin-left:auto;font-size:12px;color:#fff;opacity:.9;white-space:nowrap}
+nav.tabs{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);
+box-shadow:0 1px 4px rgba(0,0,0,.05)}
+nav.tabs .in{max-width:1080px;margin:0 auto;overflow-x:auto;white-space:nowrap;padding:0 8px;
+scrollbar-width:none}
+nav.tabs .in::-webkit-scrollbar{display:none}
+nav.tabs a{display:inline-block;font-size:13px;font-weight:700;padding:11px 12px 9px;color:#333;
+border-bottom:3px solid transparent}
+nav.tabs a.on{color:var(--red);border-bottom-color:var(--red)}
+nav.tabs a:hover:not(.on){color:var(--red)}
+main{max-width:1080px;margin:0 auto;padding:16px 16px 40px}
+.crumb{font-size:12px;color:var(--sub);margin-bottom:10px}
+.crumb a{color:var(--sub)} .crumb a:hover{text-decoration:underline}
+h1{font-size:22px;font-weight:800;line-height:1.3;margin-bottom:6px}
+.lead{font-size:13px;color:var(--sub);margin-bottom:16px}
+h2{font-size:18px;font-weight:800;margin:28px 0 12px;display:flex;align-items:center;gap:8px}
+h2:before{content:"";width:5px;height:20px;background:var(--red);border-radius:3px}
+.sec-sub{font-size:12px;color:var(--sub);margin:-6px 0 12px 13px}
+/* TOP3 */
+.top3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.hero{background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px;position:relative;min-width:0;
+display:flex;flex-direction:column;transition:box-shadow .15s}
+.hero:hover{box-shadow:0 6px 18px rgba(0,0,0,.10)}
+.crown{position:absolute;top:10px;left:10px;z-index:1;color:#fff;font-weight:900;font-size:19px;width:42px;height:42px;
+border-radius:50%;display:flex;align-items:baseline;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,.25);
+border:2px solid #fff;line-height:38px;white-space:nowrap}
+.crown small{font-size:10px;font-weight:700;margin-left:1px}
+.r1 .crown{background:linear-gradient(135deg,#f5c542,#c9950c)} .r2 .crown{background:linear-gradient(135deg,#b8bec9,#7f8794)} .r3 .crown{background:linear-gradient(135deg,#d08a4e,#9c5a24)}
+.hero .img{aspect-ratio:1/1;border-radius:6px;background:#fff;overflow:hidden;margin:0 0 10px}
+.hero .img img{width:100%;height:100%;object-fit:contain}
+.name{font-size:14px;font-weight:600;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;
+-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em}
+.stars{font-size:12px;color:#f39800;margin-top:6px;display:flex;align-items:center;gap:4px}
+.stars .n{color:var(--sub)}
+.price{font-size:20px;font-weight:800;color:var(--red);margin-top:6px;line-height:1.2}
+.price small{font-size:12px;font-weight:600;margin-left:2px}
+.pt{display:inline-block;font-size:11px;font-weight:700;color:var(--red);background:#fff;border:1px solid var(--red);
+border-radius:3px;padding:0 5px;margin-left:6px;vertical-align:middle;line-height:1.5}
+.ship{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:#e64a19;
+border-radius:3px;padding:0 5px;margin-left:6px;vertical-align:middle;line-height:1.5}
+.shop{font-size:11px;color:var(--sub);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chg{font-size:11px;font-weight:700;margin-left:6px}
+.chg.up{color:var(--up)} .chg.down{color:var(--down)} .chg.new{color:var(--new)} .chg.same{color:#aaa}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 7px;border-radius:4px;margin-top:6px;margin-right:4px}
+.badge.streak{background:#fff3bf;color:#8a6d00}
+.badge.genre{background:#e7f5ff;color:#1971c2}
+.btn{margin-top:auto;padding-top:10px}
+.btn span{display:block;text-align:center;background:var(--red);color:#fff;font-weight:700;font-size:14px;
+padding:10px;border-radius:4px}
+.hero:hover .btn span,.card:hover .btn span{background:var(--red-d)}
+/* 4位以下 */
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px;position:relative;min-width:0;
+display:flex;flex-direction:column;transition:box-shadow .15s}
+.card:hover{box-shadow:0 6px 18px rgba(0,0,0,.10)}
+.card .rk{position:absolute;top:8px;left:8px;z-index:1;background:#fff;color:var(--red);font-size:12px;
+font-weight:900;padding:2px 8px;border-radius:4px;border:1px solid var(--red)}
+.card .img{aspect-ratio:1/1;border-radius:4px;background:#fff;overflow:hidden;margin-bottom:8px}
+.card .img img{width:100%;height:100%;object-fit:contain}
+.card .name{font-size:13px;min-height:2.8em}
+.card .price{font-size:17px}
+.card .btn span{font-size:13px;padding:8px}
+.noimg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#bbb;font-size:12px}
+/* 横スクロール（急上昇） */
+.rail{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+.rail .card{flex:0 0 200px;scroll-snap-align:start}
+.more{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--red)}
+.more:hover{text-decoration:underline}
+/* ジャンル一覧 */
+.genres{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.genres a{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 10px;font-size:13px;
+font-weight:600;display:flex;align-items:center;gap:8px}
+.genres a .ic{font-size:18px}
+.genres a:hover{border-color:var(--red);color:var(--red)}
+.summary{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13px;
+color:#444;margin-bottom:14px}
+.summary b{color:var(--ink)}
+.empty{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:24px;text-align:center;
+color:var(--sub);font-size:13px}
+/* ブログ */
+.posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.post{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.post:hover{box-shadow:0 6px 18px rgba(0,0,0,.10)}
+.pimg{aspect-ratio:16/9;background:#fafafa;overflow:hidden}
+.pimg img{width:100%;height:100%;object-fit:contain}
+.pbody{padding:10px 12px 12px}
+.pmeta{font-size:12px;color:var(--sub);margin-bottom:6px}
+.plabel{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:1px 7px;border-radius:3px;margin-right:6px}
+.ptitle{font-size:14px;font-weight:700;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pdesc{font-size:12px;color:var(--sub);margin-top:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+main.article{max-width:820px}
+main.article h1{font-size:24px;line-height:1.35;margin:6px 0 10px}
+main.article .intro,main.article .outro{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 16px;font-size:15px;line-height:1.8;margin:14px 0}
+.pitem{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin:14px 0}
+.pitem h2{font-size:17px;margin:0 0 10px;line-height:1.4}
+.pitem h2:before{height:18px}
+.pitem-in{display:flex;gap:14px}
+.pthumb{flex:0 0 160px;width:160px;aspect-ratio:1/1;background:#fafafa;border-radius:4px;overflow:hidden}
+.pthumb img{width:100%;height:100%;object-fit:contain}
+.ptext{flex:1;min-width:0}
+.ptext p{font-size:15px;line-height:1.8;color:#333;margin-bottom:8px}
+.pdata .price{font-size:20px}
+.pbtn{display:inline-block;margin-top:10px;background:var(--red);color:#fff;font-weight:700;font-size:14px;padding:9px 22px;border-radius:4px}
+.pbtn:hover{background:var(--red-d)}
+.note{font-size:12px;color:var(--sub);margin:12px 0}
+footer{background:#fff;border-top:1px solid var(--line);margin-top:30px}
+footer .in{max-width:1080px;margin:0 auto;padding:22px 16px;font-size:12px;color:var(--sub);line-height:1.8}
+footer .links a{margin-right:14px;font-weight:600;color:#444}
+footer .links a:hover{color:var(--red)}
+.about{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;font-size:14px}
+.about h3{font-size:15px;margin:18px 0 6px} .about h3:first-child{margin-top:0}
+.about p,.about li{color:#333} .about ul{padding-left:20px}
+@media (max-width:820px){
+  .posts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .top3{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .hero{padding:10px} .hero .img{margin:0 0 8px}
+  .hero .name{font-size:12px} .hero .price{font-size:16px} .hero .btn span{font-size:12px;padding:8px}
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+}
+@media (max-width:560px){
+  body{font-size:14px}
+  .top .in{padding:10px 12px} .logo{font-size:17px} .upd{display:none}
+  main{padding:12px 12px 32px}
+  h1{font-size:19px}
+  .top3{grid-template-columns:1fr}
+  .hero{flex-direction:row;flex-wrap:wrap;padding:12px}
+  .hero .img{flex:0 0 120px;width:120px;margin:0 12px 0 0}
+  .hero .body{flex:1;min-width:0}
+  .hero .btn{flex-basis:100%}
+  .hero .name{min-height:0}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .card .name{font-size:12px}
+  .genres{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .posts{grid-template-columns:1fr}
+  .post{flex-direction:row} .pimg{flex:0 0 120px;aspect-ratio:1/1}
+  main.article h1{font-size:20px}
+  .pitem-in{flex-direction:column} .pthumb{width:100%;max-width:220px;margin:0 auto}
+  .pbtn{display:block;text-align:center}
+}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "テレビゲーム 売れ筋ランキング 2026年08月17日", "url": "https://takahiro1919.github.io/genre/101205.html", "numberOfItems": 30, "itemListElement": [{"@type": "ListItem", "position": 30, "name": "【新品】SIE PS5 プレイステーション5 デジタル・エディション 日本語専用 Console Language： Japanese only CFI-2200B01 825GB", "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.1ae4t77a.g00r2muo.1ae4u162/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417419%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/auc-worldichi/cabinet/13/4948872417419.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 29, "name": "ゼルダの伝説　ブレス オブ ザ ワイルド Nintendo Switch 2 Edition", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18223360%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3291/4902370553291.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 28, "name": "ELDEN RING Tarnished Edition 【Switch2】 POT-P-AAF6C", "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821674019%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000579/2821674019.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 27, "name": "【売り尽くしセール！最安級価格＆期間限定ポイント2倍！】【新品・国内正規品】Nintendo Switch 2 国内版 BEE-S-KB6CA 【送料無料】", "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.1ae4t8cc.g00u8q2o.1ae4ucf8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4902370553024%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/keitai-god2a/cabinet/11328076/imgrc0127264554.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 26, "name": "【新品】Nintendo Switch 2 日本語・国内専用 BEE-S-KB6CA", "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.1ae4t266.g00u7o7o.1ae4ud0e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370553024%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/uriurishop/cabinet/2/4902370553024.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 25, "name": "【特典】Nintendo Switch 2（日本語・国内専用） スプラトゥーン レイダース セット(『スプラトゥーン レイダース』クッション)", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18672234%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4779/4902370554779_1_3.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 24, "name": "【未使用品】ニンテンドー『Nintendo switch2 日本語・国内専用』BEE-S-KB6CA ゲーム機本体 1週間保証【中古】", "url": "https://hb.afl.rakuten.co.jp/hgc/g00qks9o.1ae4t58a.g00qks9o.1ae4u47d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftakayama78%2F4902370553024%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/takayama78/cabinet/t20250606/4902370553024.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 23, "name": "【新品・即納】Nintendo Switch2 本体（日本語・国内専用）BEE-S-KB6CA", "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.1ae4t642.g00r1fdo.1ae4u283/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10018514%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/lcs-live/cabinet/living/07009866/10230995/imgrc0332412876.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 22, "name": "任天堂｜Nintendo Nintendo Switch 2（日本語・国内専用） BEE-S-KB6CA[ゲーム機本体]", "url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.1ae4t2b3.g00r7ldo.1ae4ud65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4902370553024%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/11973/00000014029606_a01.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 21, "name": "Switch2対応 月間MVP【1位4冠達成】Switch / Switch2 コントローラー スイッチ2 スイッチ ワイヤレス プロコン プロコントローラー switchコントローラ プロコンswitch プロコン2 ワイヤレスコントローラー ジョイコン 連射機能 switch2コントローラ Switch2コントローラー", "url": "https://hb.afl.rakuten.co.jp/hgc/g00rgnwo.1ae4t4aa.g00rgnwo.1ae4ud44/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcase-by-case%2F3010%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/case-by-case/cabinet/08655288/09261397/imgrc0080367422.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 20, "name": "任天堂 【Switch】Joy-Con(L) パステルパープル/(R) パステルグリーン [HAC-A-JAWAF NSW ジョイコン Pパ-プル＆Pグリ-ン]", "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.1ae4t07c.g00pukwo.1ae4u372/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370551136-54-62428-n%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jism/cabinet/0075/4902370551136.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 19, "name": "PlayStation5 DualSense ワイヤレスコントローラー SONY 純正 デュアルセンス PS5 コントローラー ゲームパッド 【送料無料】", "url": "https://hb.afl.rakuten.co.jp/hgc/g00twmvo.1ae4tc03.g00twmvo.1ae4ue23/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fselectkoh%2Fwho488%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/selectkoh/cabinet/img/parts/imgrc0183703484.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 18, "name": "[Switch 2] ぽこ あ ポケモン エキスパンションパス（ダウンロード版）※3,200ポイントまでご利用可", "url": "https://hb.afl.rakuten.co.jp/hgc/g00pul2o.1ae4t844.g00pul2o.1ae4u8e5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frdownload%2F803135145%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rdownload/cabinet/thumbs/800000079/4/802252664_p.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 17, "name": "【初回特典】グランド・セフト・オートVI [PS5ソフト] (コードインボックス版、配送日：2026年11月12日～、プレイ開始日：2026年11月19日) 【初回購入封入特典】：ヴィンテージ・バイスシティパック", "url": "https://hb.afl.rakuten.co.jp/hgc/g00t81xo.1ae4t5de.g00t81xo.1ae4u35c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsuperdeal%2F17447jeo10596%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/superdeal/cabinet/12097676/12925080/13311318/imgrc0341815650.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 16, "name": "ファイアーエムブレム 万紫千紅", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18672238%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4472/4902370554472.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 15, "name": "ディスクドライブ", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17668538%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6030/4948872416030.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 14, "name": "ぽこ あ ポケモン", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18437525%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0420/4521329460420_1_3.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 13, "name": "【特典】鬼武者 Way of the Sword(【初回購入封入特典】プロダクトコード)", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18664125%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7751/4976219137751.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 12, "name": "【送料無料】任天堂 Nintendo Switch 2（日本語・国内専用）[BEE-S-KB6CA]【新品・国内正規品】【返品不可商品】ニンテンドースイッチ2", "url": "https://hb.afl.rakuten.co.jp/hgc/g00rdkso.1ae4t487.g00rdkso.1ae4u823/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdigimart-shop%2Fkd0386%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/digimart-shop/cabinet/kaden/kd0386_01.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 11, "name": "トモダチコレクション わくわく生活", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18522186%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3963/4902370553963.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 10, "name": "Nintendo Switch 2（日本語・国内専用）", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18210481%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3024/4902370553024.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 9, "name": "スプラトゥーン レイダース", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18612000%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4359/4902370554359.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 8, "name": "トモダチコレクション わくわく生活 【Switch】 HAC-P-BLFGA", "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821346015%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000506/2821346015.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 7, "name": "【即納(営業日内の発送)】Nintendo Switch2 日本語 国内専用 ニンテンドー スイッチ2 本体 任天堂 新型 送料無料 任天堂switch2 BEE-S-KB6CA [ラッピング可] R-LOGI", "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.1ae4t7ce.g00sxgso.1ae4uea7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370553024%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sokutei/cabinet/rank/imgrc0107226813.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 6, "name": "【特典】グランド・セフト・オートVI (コードインボックス版、配送日：2026年11月12日、プレイ開始日：2026年11月19日)(【初回購入封入特典】ヴィンテージ・バイスシティパック)", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18735583%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9312/4571304479312.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 5, "name": "リズム天国 ミラクルスターズ", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18600497%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4298/4902370554298.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 4, "name": "ファイアーエムブレム 万紫千紅 【Switch2】 BEE-P-AACSA", "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821696011%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000569/2821696011.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 3, "name": "リズム天国 ミラクルスターズ 【Switch】 HAC-P-BFLTA", "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821537017%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000526/2821537017.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 2, "name": "PlayStation(R)5 デジタル・エディション 日本語専用 Console Language: Japanese only CFI-2200B01", "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F7999577018%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000495/7999577018.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 1, "name": "Samsung microSD Express Card 256GB for Nintendo Switch 2", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18210485%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0670/8806095700670.jpg?_ex=300x300"}]}</script>
 </head>
 <body>
 <div class="pr">【PR】当サイトはアフィリエイト広告（楽天アフィリエイト）を利用しています</div>
-<header>
-  <h1><a href="../index.html">今週の売れ筋ランキング</a></h1>
-  <p>楽天市場の売れ筋を毎日自動更新。順位の変動・急上昇がひと目でわかります</p>
-</header>
+<div class="top"><div class="in">
+  <a class="logo" href="../index.html"><span class="mark">1</span>今週の売れ筋ランキング</a>
+  <span class="tag">楽天市場の売れ筋を毎日自動更新</span>
+  <span class="upd">更新 08/17 15:42</span>
+</div></div>
 
-<nav><a href="../index.html">総合</a><a href="../rise.html">急上昇</a><a href="../genre/100371.html">レディースファッション</a><a href="../genre/551177.html">メンズファッション</a><a href="../genre/100433.html">インナー・下着・ナイトウェア</a><a href="../genre/216131.html">バッグ・小物・ブランド雑貨</a><a href="../genre/558885.html">靴</a><a href="../genre/558929.html">腕時計</a><a href="../genre/216129.html">ジュエリー・アクセサリー</a><a href="../genre/100533.html">キッズ・ベビー・マタニティ</a><a href="../genre/566382.html">おもちゃ</a><a href="../genre/101070.html">スポーツ・アウトドア</a><a href="../genre/562637.html">家電</a><a href="../genre/211742.html">TV・オーディオ・カメラ</a><a href="../genre/100026.html">パソコン・周辺機器</a><a href="../genre/564500.html">スマートフォン・タブレット</a><a href="../genre/565004.html">光回線・モバイル通信</a><a href="../genre/100227.html">食品</a><a href="../genre/551167.html">スイーツ・お菓子</a><a href="../genre/100316.html">水・ソフトドリンク</a><a href="../genre/510915.html">ビール・洋酒</a><a href="../genre/510901.html">日本酒・焼酎</a><a href="../genre/100804.html">インテリア・寝具・収納</a><a href="../genre/215783.html">日用品雑貨・文房具・手芸</a><a href="../genre/558944.html">キッチン用品・食器・調理器具</a><a href="../genre/200162.html">本・雑誌・コミック</a><a href="../genre/101240.html">CD・DVD</a><a href="../genre/101205.html" class=on>テレビゲーム</a><a href="../genre/101164.html">ホビー</a><a href="../genre/112493.html">楽器・音響機器</a><a href="../genre/101114.html">車・バイク</a><a href="../genre/503190.html">車用品・バイク用品</a></nav><main><div class="updated">最終更新: 2026年08月17日 14:52</div><h2>テレビゲーム 売れ筋ランキング</h2><p class="lead">楽天市場「テレビゲーム」ジャンルの売れ筋。掲載30商品、価格帯 2,480円〜59,980円（中央値 8,470円）。</p>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rgnwo.1ae4t4aa.g00rgnwo.1ae4ud44/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcase-by-case%2F3010%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">30位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/case-by-case/cabinet/08655288/09261397/imgrc0080367422.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">Switch2対応 月間MVP【1位4冠達成】Switch / Switch2 コントローラー スイッチ2 スイッチ ワイヤレス プロコン プロコントローラー switchコントローラ プロコンswitch プロコン2 ワイヤレスコントローラー ジョイコン 連射機能 switch2コントローラ Switch2コントローラー</div>
-        <div class="price">2,480円</div>
-        <div class="meta">ケースbyケース　レビュー5,280件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00tseno.1ae4td8c.g00tseno.1ae4uc99/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Falljapan-online-shop%2F4902370553024-softset1%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">29位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/alljapan-online-shop/cabinet/switch2set/imgrc0128797776.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【Switch2 福袋 4点セット】Switch2 本体 スプラトゥーン レイダースセット [選べる スイッチ2 本体] + [ソフト1枚] + [専用ケース] + [画面フィルム1枚] 4点セット プレゼント お祝い 任天堂 スイッチ 2 本体 誕生日 日本語・国内専用</div>
-        <div class="price">58,000円</div>
-        <div class="meta">販売一丁目　レビュー151件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17668538%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">28位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6030/4948872416030.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">ディスクドライブ</div>
-        <div class="price">11,980円</div>
-        <div class="meta">楽天ブックス　レビュー100件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18440637%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">27位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7419/4948872417419_1_2.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">PlayStation5 デジタル・エディション 日本語専用 Console Language: Japanese only</div>
-        <div class="price">55,000円</div>
-        <div class="meta">楽天ブックス　レビュー75件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821674019%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">26位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000579/2821674019.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">ELDEN RING Tarnished Edition 【Switch2】 POT-P-AAF6C</div>
-        <div class="price">7,757円</div>
-        <div class="meta">ヤマダ電機　楽天市場店</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18663067%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">25位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6072/4580891516072.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【特典】ACE COMBAT 8: WINGS OF THEVE(【早期購入封入特典】DLC)</div>
-        <div class="price">8,321円</div>
-        <div class="meta">楽天ブックス</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r8mvo.1ae4t3bd.g00r8mvo.1ae4u6ca/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fr-kojima%2F4902370553963%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">24位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/r-kojima/cabinet/n0000001829/4902370553963_1.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">任天堂　Nintendo　Switchゲームソフト トモダチコレクション わくわく生活　HACPBLFGA</div>
-        <div class="price">6,770円</div>
-        <div class="meta">コジマ楽天市場店</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18522186%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">23位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3963/4902370553963.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">トモダチコレクション わくわく生活</div>
-        <div class="price">6,557円</div>
-        <div class="meta">楽天ブックス　レビュー234件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r2muo.1ae4t77a.g00r2muo.1ae4u162/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370553024%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">22位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/auc-worldichi/cabinet/12/4902370553024.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【新品】Nintendo Switch 2 日本語・国内専用 BEE-S-KB6CA</div>
-        <div class="price">57,450円</div>
-        <div class="meta">電子問屋ワールドいち　レビュー313件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.1ae4t2b3.g00r7ldo.1ae4ud65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4902370553024%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">21位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/11973/00000014029606_a01.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">任天堂｜Nintendo Nintendo Switch 2（日本語・国内専用） BEE-S-KB6CA[ゲーム機本体]</div>
-        <div class="price">59,980円</div>
-        <div class="meta">楽天ビック（ビックカメラ×楽天）　レビュー6件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18663573%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">20位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7343/4948872017343.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【特典】Marvel’s Wolverine(【早期購入封入特典】DLC)</div>
-        <div class="price">7,620円</div>
-        <div class="meta">楽天ブックス</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t81xo.1ae4t5de.g00t81xo.1ae4u35c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsuperdeal%2F17447jeo10596%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">19位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/superdeal/cabinet/12097676/12925080/13311318/imgrc0341815650.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【初回特典】グランド・セフト・オートVI [PS5ソフト] (コードインボックス版、配送日：2026年11月12日～、プレイ開始日：2026年11月19日) 【初回購入封入特典】：ヴィンテージ・バイスシティパック</div>
-        <div class="price">9,800円</div>
-        <div class="meta">楽天スーパーDEALSHOP</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.1ae4t2b3.g00r7ldo.1ae4ud65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4948872417419%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">18位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/14986/00000014590849_a01.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">ソニー・インタラクティブエンタテインメント｜SIE PlayStation5 デジタル・エディション 日本語専用 Console Language: Japanese only CFI-2200B01</div>
-        <div class="price">55,000円</div>
-        <div class="meta">楽天ビック（ビックカメラ×楽天）　レビュー42件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18437525%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">17位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0420/4521329460420_1_3.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">ぽこ あ ポケモン</div>
-        <div class="price">7,880円</div>
-        <div class="meta">楽天ブックス　レビュー254件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18210484%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">16位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2843/4902370552843.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">Nintendo Switch 2 Proコントローラー</div>
-        <div class="price">9,980円</div>
-        <div class="meta">楽天ブックス　レビュー206件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821346015%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">15位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000506/2821346015.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">トモダチコレクション わくわく生活 【Switch】 HAC-P-BLFGA</div>
-        <div class="price">6,770円</div>
-        <div class="meta">ヤマダ電機　楽天市場店　レビュー224件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pukwo.1ae4t07c.g00pukwo.1ae4u372/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370552843-54-73615-n%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">14位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/jism/cabinet/0039/4902370552843.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">任天堂 【Switch2】Nintendo Switch 2 Proコントローラー [BEE-A-FSSKA NSW2 Proコントローラー]</div>
-        <div class="price">9,980円</div>
-        <div class="meta">Joshin web 家電とPCの大型専門店　レビュー46件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18664125%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">13位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7751/4976219137751.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【特典】鬼武者 Way of the Sword(【初回購入封入特典】プロダクトコード)</div>
-        <div class="price">7,641円</div>
-        <div class="meta">楽天ブックス</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pul2o.1ae4t844.g00pul2o.1ae4u8e5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frdownload%2F803135145%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">12位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/rdownload/cabinet/thumbs/800000079/4/802252664_p.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">[Switch 2] ぽこ あ ポケモン エキスパンションパス（ダウンロード版）※3,200ポイントまでご利用可</div>
-        <div class="price">4,400円</div>
-        <div class="meta">楽天ブックス（ダウンロード）　レビュー8件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18672238%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">11位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4472/4902370554472.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">ファイアーエムブレム 万紫千紅</div>
-        <div class="price">8,970円</div>
-        <div class="meta">楽天ブックス</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qks9o.1ae4t58a.g00qks9o.1ae4u47d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftakayama78%2F4902370553024%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">10位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/takayama78/cabinet/t20250606/4902370553024.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【未使用品】ニンテンドー『Nintendo switch2 日本語・国内専用』BEE-S-KB6CA ゲーム機本体 1週間保証【中古】</div>
-        <div class="price">53,487円</div>
-        <div class="meta">高山質店　レビュー69件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18600497%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">9位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4298/4902370554298.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">リズム天国 ミラクルスターズ</div>
-        <div class="price">5,830円</div>
-        <div class="meta">楽天ブックス　レビュー78件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18612000%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">8位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4359/4902370554359.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">スプラトゥーン レイダース</div>
-        <div class="price">6,539円</div>
-        <div class="meta">楽天ブックス　レビュー39件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18735583%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">7位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9312/4571304479312.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【特典】グランド・セフト・オートVI (コードインボックス版、配送日：2026年11月12日、プレイ開始日：2026年11月19日)(【初回購入封入特典】ヴィンテージ・バイスシティパック)</div>
-        <div class="price">8,329円</div>
-        <div class="meta">楽天ブックス</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18210481%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">6位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3024/4902370553024.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">Nintendo Switch 2（日本語・国内専用）</div>
-        <div class="price">59,979円</div>
-        <div class="meta">楽天ブックス　レビュー540件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00sxgso.1ae4t7ce.g00sxgso.1ae4uea7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370553024%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">5位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/sokutei/cabinet/rank/imgrc0107226813.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【即納(営業日内の発送)】Nintendo Switch2 日本語 国内専用 ニンテンドー スイッチ2 本体 任天堂 新型 送料無料 任天堂switch2 BEE-S-KB6CA [ラッピング可] R-LOGI</div>
-        <div class="price">57,799円</div>
-        <div class="meta">MoriMoriStore（測定の森）　レビュー146件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821696011%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">4位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000569/2821696011.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">ファイアーエムブレム 万紫千紅 【Switch2】 BEE-P-AACSA</div>
-        <div class="price">8,470円</div>
-        <div class="meta">ヤマダ電機　楽天市場店</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821537017%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">3位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000526/2821537017.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">リズム天国 ミラクルスターズ 【Switch】 HAC-P-BFLTA</div>
-        <div class="price">5,830円</div>
-        <div class="meta">ヤマダ電機　楽天市場店　レビュー113件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F7999577018%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">2位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000495/7999577018.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">PlayStation(R)5 デジタル・エディション 日本語専用 Console Language: Japanese only CFI-2200B01</div>
-        <div class="price">55,000円</div>
-        <div class="meta">ヤマダ電機　楽天市場店　レビュー49件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18210485%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">1位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0670/8806095700670.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">Samsung microSD Express Card 256GB for Nintendo Switch 2</div>
-        <div class="price">6,979円</div>
-        <div class="meta">楽天ブックス　レビュー138件</div>
-      </div>
-    </a></main>
-<footer>
-  最終更新: 2026年08月17日 14:52　価格・在庫は変動します。最新情報はリンク先（楽天市場）でご確認ください。<br>
-  &copy; 2026 今週の売れ筋ランキング
-</footer>
+<nav class="tabs"><div class="in"><a href="../index.html">総合</a><a href="../trend.html">💬 今話題</a><a href="../rise.html">🔥 急上昇</a><a href="../blog/index.html">📝 ブログ</a><a href="../genre/100371.html">レディースファッション</a><a href="../genre/551177.html">メンズファッション</a><a href="../genre/100433.html">インナー・下着・ナイトウェア</a><a href="../genre/216131.html">バッグ・小物・ブランド雑貨</a><a href="../genre/558885.html">靴</a><a href="../genre/558929.html">腕時計</a><a href="../genre/216129.html">ジュエリー・アクセサリー</a><a href="../genre/100533.html">キッズ・ベビー・マタニティ</a><a href="../genre/566382.html">おもちゃ</a><a href="../genre/101070.html">スポーツ・アウトドア</a><a href="../genre/562637.html">家電</a><a href="../genre/211742.html">TV・オーディオ・カメラ</a><a href="../genre/100026.html">パソコン・周辺機器</a><a href="../genre/564500.html">スマートフォン・タブレット</a><a href="../genre/565004.html">光回線・モバイル通信</a><a href="../genre/100227.html">食品</a><a href="../genre/551167.html">スイーツ・お菓子</a><a href="../genre/100316.html">水・ソフトドリンク</a><a href="../genre/510915.html">ビール・洋酒</a><a href="../genre/510901.html">日本酒・焼酎</a><a href="../genre/100804.html">インテリア・寝具・収納</a><a href="../genre/215783.html">日用品雑貨・文房具・手芸</a><a href="../genre/558944.html">キッチン用品・食器・調理器具</a><a href="../genre/200162.html">本・雑誌・コミック</a><a href="../genre/101240.html">CD・DVD</a><a href="../genre/101205.html" class=on>テレビゲーム</a><a href="../genre/101164.html">ホビー</a><a href="../genre/112493.html">楽器・音響機器</a><a href="../genre/101114.html">車・バイク</a><a href="../genre/503190.html">車用品・バイク用品</a></div></nav><main><div class="crumb"><a href="../index.html">ホーム</a> › テレビゲーム</div><h1>🎮 テレビゲーム 売れ筋ランキング TOP30（2026年08月17日）</h1><p class="lead">楽天市場「テレビゲーム」ジャンルで今売れている商品のランキング。毎日自動更新、前回からの順位変動つき。</p><div class="summary">掲載 <b>30商品</b>　|　価格帯 <b>2,480〜64,980円</b>（中央値 8,980円）</div><div class="top3">
+<a class="hero r1" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18210485%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="crown">1<small>位</small></div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0670/8806095700670.jpg?_ex=300x300" alt="Samsung microSD Express Card 256GB for Nintendo Switch 2" loading="lazy"></div>
+  <div class="body">
+    <div class="name">Samsung microSD Express Card 256GB for Nintendo Switch 2</div>
+    <div class="stars"><span>★★★★★</span><span class="n">4.7（138件）</span></div>
+    <div class="price">8,980<small>円</small><span class="ship">送料無料</span></div>
+    <div class="shop">楽天ブックス</div>
+    
+  </div>
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="hero r2" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F7999577018%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="crown">2<small>位</small></div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000495/7999577018.jpg?_ex=300x300" alt="PlayStation(R)5 デジタル・エディション 日本語専用 Console Language: Japanese" loading="lazy"></div>
+  <div class="body">
+    <div class="name">PlayStation(R)5 デジタル・エディション 日本語専用 Console Language: Japanese only CFI-2200B01</div>
+    <div class="stars"><span>★★★★☆</span><span class="n">4.5（50件）</span></div>
+    <div class="price">55,000<small>円</small></div>
+    <div class="shop">ヤマダ電機　楽天市場店</div>
+    
+  </div>
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="hero r3" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821537017%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="crown">3<small>位</small></div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000526/2821537017.jpg?_ex=300x300" alt="リズム天国 ミラクルスターズ 【Switch】 HAC-P-BFLTA" loading="lazy"></div>
+  <div class="body">
+    <div class="name">リズム天国 ミラクルスターズ 【Switch】 HAC-P-BFLTA</div>
+    <div class="stars"><span>★★★★☆</span><span class="n">4.4（114件）</span></div>
+    <div class="price">5,830<small>円</small></div>
+    <div class="shop">ヤマダ電機　楽天市場店</div>
+    
+  </div>
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a></div><div class="grid" style="margin-top:12px">
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821696011%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">4位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000569/2821696011.jpg?_ex=300x300" alt="ファイアーエムブレム 万紫千紅 【Switch2】 BEE-P-AACSA" loading="lazy"></div>
+  <div class="name">ファイアーエムブレム 万紫千紅 【Switch2】 BEE-P-AACSA</div>
+  
+  <div class="price">8,470<small>円</small></div>
+  <div class="shop">ヤマダ電機　楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18600497%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">5位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4298/4902370554298.jpg?_ex=300x300" alt="リズム天国 ミラクルスターズ" loading="lazy"></div>
+  <div class="name">リズム天国 ミラクルスターズ</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.8（79件）</span></div>
+  <div class="price">5,830<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18735583%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">6位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9312/4571304479312.jpg?_ex=300x300" alt="【特典】グランド・セフト・オートVI (コードインボックス版、配送日：2026年11月12日、プレイ開始日：2026年1" loading="lazy"></div>
+  <div class="name">【特典】グランド・セフト・オートVI (コードインボックス版、配送日：2026年11月12日、プレイ開始日：2026年11月19日)(【初回購入封入特典】ヴィンテージ・バイスシティパック)</div>
+  
+  <div class="price">8,329<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00sxgso.1ae4t7ce.g00sxgso.1ae4uea7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370553024%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">7位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/sokutei/cabinet/rank/imgrc0107226813.jpg?_ex=300x300" alt="【即納(営業日内の発送)】Nintendo Switch2 日本語 国内専用 ニンテンドー スイッチ2 本体 任天堂 新" loading="lazy"></div>
+  <div class="name">【即納(営業日内の発送)】Nintendo Switch2 日本語 国内専用 ニンテンドー スイッチ2 本体 任天堂 新型 送料無料 任天堂switch2 BEE-S-KB6CA [ラッピング可] R-LOGI</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（146件）</span></div>
+  <div class="price">57,980<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">MoriMoriStore（測定の森）</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821346015%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">8位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000506/2821346015.jpg?_ex=300x300" alt="トモダチコレクション わくわく生活 【Switch】 HAC-P-BLFGA" loading="lazy"></div>
+  <div class="name">トモダチコレクション わくわく生活 【Switch】 HAC-P-BLFGA</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.5（224件）</span></div>
+  <div class="price">6,770<small>円</small></div>
+  <div class="shop">ヤマダ電機　楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18612000%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">9位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4359/4902370554359.jpg?_ex=300x300" alt="スプラトゥーン レイダース" loading="lazy"></div>
+  <div class="name">スプラトゥーン レイダース</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（40件）</span></div>
+  <div class="price">6,539<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18210481%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">10位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3024/4902370553024.jpg?_ex=300x300" alt="Nintendo Switch 2（日本語・国内専用）" loading="lazy"></div>
+  <div class="name">Nintendo Switch 2（日本語・国内専用）</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（541件）</span></div>
+  <div class="price">59,979<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18522186%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">11位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3963/4902370553963.jpg?_ex=300x300" alt="トモダチコレクション わくわく生活" loading="lazy"></div>
+  <div class="name">トモダチコレクション わくわく生活</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.8（235件）</span></div>
+  <div class="price">6,557<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rdkso.1ae4t487.g00rdkso.1ae4u823/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdigimart-shop%2Fkd0386%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">12位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/digimart-shop/cabinet/kaden/kd0386_01.jpg?_ex=300x300" alt="【送料無料】任天堂 Nintendo Switch 2（日本語・国内専用）[BEE-S-KB6CA]【新品・国内正規品】" loading="lazy"></div>
+  <div class="name">【送料無料】任天堂 Nintendo Switch 2（日本語・国内専用）[BEE-S-KB6CA]【新品・国内正規品】【返品不可商品】ニンテンドースイッチ2</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（24件）</span></div>
+  <div class="price">58,800<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">カメラ・レンズ・家電のDigiMart</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18664125%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">13位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7751/4976219137751.jpg?_ex=300x300" alt="【特典】鬼武者 Way of the Sword(【初回購入封入特典】プロダクトコード)" loading="lazy"></div>
+  <div class="name">【特典】鬼武者 Way of the Sword(【初回購入封入特典】プロダクトコード)</div>
+  
+  <div class="price">7,641<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18437525%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">14位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0420/4521329460420_1_3.jpg?_ex=300x300" alt="ぽこ あ ポケモン" loading="lazy"></div>
+  <div class="name">ぽこ あ ポケモン</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.5（254件）</span></div>
+  <div class="price">7,880<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17668538%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">15位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6030/4948872416030.jpg?_ex=300x300" alt="ディスクドライブ" loading="lazy"></div>
+  <div class="name">ディスクドライブ</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.5（100件）</span></div>
+  <div class="price">11,980<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18672238%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">16位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4472/4902370554472.jpg?_ex=300x300" alt="ファイアーエムブレム 万紫千紅" loading="lazy"></div>
+  <div class="name">ファイアーエムブレム 万紫千紅</div>
+  
+  <div class="price">8,970<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t81xo.1ae4t5de.g00t81xo.1ae4u35c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsuperdeal%2F17447jeo10596%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">17位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/superdeal/cabinet/12097676/12925080/13311318/imgrc0341815650.jpg?_ex=300x300" alt="【初回特典】グランド・セフト・オートVI [PS5ソフト] (コードインボックス版、配送日：2026年11月12日～、プ" loading="lazy"></div>
+  <div class="name">【初回特典】グランド・セフト・オートVI [PS5ソフト] (コードインボックス版、配送日：2026年11月12日～、プレイ開始日：2026年11月19日) 【初回購入封入特典】：ヴィンテージ・バイスシティパック</div>
+  
+  <div class="price">9,800<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天スーパーDEALSHOP</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pul2o.1ae4t844.g00pul2o.1ae4u8e5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frdownload%2F803135145%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">18位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/rdownload/cabinet/thumbs/800000079/4/802252664_p.jpg?_ex=300x300" alt="[Switch 2] ぽこ あ ポケモン エキスパンションパス（ダウンロード版）※3,200ポイントまでご利用可" loading="lazy"></div>
+  <div class="name">[Switch 2] ぽこ あ ポケモン エキスパンションパス（ダウンロード版）※3,200ポイントまでご利用可</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（8件）</span></div>
+  <div class="price">4,400<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス（ダウンロード）</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00twmvo.1ae4tc03.g00twmvo.1ae4ue23/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fselectkoh%2Fwho488%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">19位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/selectkoh/cabinet/img/parts/imgrc0183703484.jpg?_ex=300x300" alt="PlayStation5 DualSense ワイヤレスコントローラー SONY 純正 デュアルセンス PS5 コントロ" loading="lazy"></div>
+  <div class="name">PlayStation5 DualSense ワイヤレスコントローラー SONY 純正 デュアルセンス PS5 コントローラー ゲームパッド 【送料無料】</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（29件）</span></div>
+  <div class="price">12,800<small>円</small></div>
+  <div class="shop">SELECT KOH</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pukwo.1ae4t07c.g00pukwo.1ae4u372/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370551136-54-62428-n%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">20位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/jism/cabinet/0075/4902370551136.jpg?_ex=300x300" alt="任天堂 【Switch】Joy-Con(L) パステルパープル/(R) パステルグリーン [HAC-A-JAWAF NS" loading="lazy"></div>
+  <div class="name">任天堂 【Switch】Joy-Con(L) パステルパープル/(R) パステルグリーン [HAC-A-JAWAF NSW ジョイコン Pパ-プル＆Pグリ-ン]</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（131件）</span></div>
+  <div class="price">8,220<small>円</small></div>
+  <div class="shop">Joshin web 家電とPCの大型専門店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rgnwo.1ae4t4aa.g00rgnwo.1ae4ud44/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcase-by-case%2F3010%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">21位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/case-by-case/cabinet/08655288/09261397/imgrc0080367422.jpg?_ex=300x300" alt="Switch2対応 月間MVP【1位4冠達成】Switch / Switch2 コントローラー スイッチ2 スイッチ ワ" loading="lazy"></div>
+  <div class="name">Switch2対応 月間MVP【1位4冠達成】Switch / Switch2 コントローラー スイッチ2 スイッチ ワイヤレス プロコン プロコントローラー switchコントローラ プロコンswitch プロコン2 ワイヤレスコントローラー ジョイコン 連射機能 switch2コントローラ Switch2コントローラー</div>
+  <div class="stars"><span>★★★★☆</span><span class="n">4.5（5,280件）</span></div>
+  <div class="price">2,480<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">ケースbyケース</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.1ae4t2b3.g00r7ldo.1ae4ud65/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4902370553024%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">22位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/11973/00000014029606_a01.jpg?_ex=300x300" alt="任天堂｜Nintendo Nintendo Switch 2（日本語・国内専用） BEE-S-KB6CA[ゲーム機本体]" loading="lazy"></div>
+  <div class="name">任天堂｜Nintendo Nintendo Switch 2（日本語・国内専用） BEE-S-KB6CA[ゲーム機本体]</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（6件）</span></div>
+  <div class="price">59,980<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ビック（ビックカメラ×楽天）</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.1ae4t642.g00r1fdo.1ae4u283/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10018514%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">23位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/lcs-live/cabinet/living/07009866/10230995/imgrc0332412876.jpg?_ex=300x300" alt="【新品・即納】Nintendo Switch2 本体（日本語・国内専用）BEE-S-KB6CA" loading="lazy"></div>
+  <div class="name">【新品・即納】Nintendo Switch2 本体（日本語・国内専用）BEE-S-KB6CA</div>
+  <div class="stars"><span>★★★★☆</span><span class="n">4.5（54件）</span></div>
+  <div class="price">56,999<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">らいぶshop</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qks9o.1ae4t58a.g00qks9o.1ae4u47d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftakayama78%2F4902370553024%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">24位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/takayama78/cabinet/t20250606/4902370553024.jpg?_ex=300x300" alt="【未使用品】ニンテンドー『Nintendo switch2 日本語・国内専用』BEE-S-KB6CA ゲーム機本体 1週" loading="lazy"></div>
+  <div class="name">【未使用品】ニンテンドー『Nintendo switch2 日本語・国内専用』BEE-S-KB6CA ゲーム機本体 1週間保証【中古】</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.9（70件）</span></div>
+  <div class="price">53,487<small>円</small></div>
+  <div class="shop">高山質店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18672234%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">25位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4779/4902370554779_1_3.jpg?_ex=300x300" alt="【特典】Nintendo Switch 2（日本語・国内専用） スプラトゥーン レイダース セット(『スプラトゥーン レ" loading="lazy"></div>
+  <div class="name">【特典】Nintendo Switch 2（日本語・国内専用） スプラトゥーン レイダース セット(『スプラトゥーン レイダース』クッション)</div>
+  <div class="stars"><span>★★★★★</span><span class="n">5.0（8件）</span></div>
+  <div class="price">64,980<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.1ae4t266.g00u7o7o.1ae4ud0e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370553024%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">26位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/uriurishop/cabinet/2/4902370553024.jpg?_ex=300x300" alt="【新品】Nintendo Switch 2 日本語・国内専用 BEE-S-KB6CA" loading="lazy"></div>
+  <div class="name">【新品】Nintendo Switch 2 日本語・国内専用 BEE-S-KB6CA</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（331件）</span></div>
+  <div class="price">57,450<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">電子問屋 2号店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.1ae4t8cc.g00u8q2o.1ae4ucf8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4902370553024%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">27位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/keitai-god2a/cabinet/11328076/imgrc0127264554.jpg?_ex=300x300" alt="【売り尽くしセール！最安級価格＆期間限定ポイント2倍！】【新品・国内正規品】Nintendo Switch 2 国内版 " loading="lazy"></div>
+  <div class="name">【売り尽くしセール！最安級価格＆期間限定ポイント2倍！】【新品・国内正規品】Nintendo Switch 2 国内版 BEE-S-KB6CA 【送料無料】</div>
+  <div class="stars"><span>★★★★☆</span><span class="n">4.5（137件）</span></div>
+  <div class="price">57,099<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">モバイル販売2号店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.1ae4t7a7.g00t3jpo.1ae4u861/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821674019%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">28位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yamada-denki/cabinet/a07000579/2821674019.jpg?_ex=300x300" alt="ELDEN RING Tarnished Edition 【Switch2】 POT-P-AAF6C" loading="lazy"></div>
+  <div class="name">ELDEN RING Tarnished Edition 【Switch2】 POT-P-AAF6C</div>
+  
+  <div class="price">7,757<small>円</small></div>
+  <div class="shop">ヤマダ電機　楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18223360%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">29位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3291/4902370553291.jpg?_ex=300x300" alt="ゼルダの伝説　ブレス オブ ザ ワイルド Nintendo Switch 2 Edition" loading="lazy"></div>
+  <div class="name">ゼルダの伝説　ブレス オブ ザ ワイルド Nintendo Switch 2 Edition</div>
+  <div class="stars"><span>★★★★★</span><span class="n">5.0（13件）</span></div>
+  <div class="price">7,680<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">楽天ブックス</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r2muo.1ae4t77a.g00r2muo.1ae4u162/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417419%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">30位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/auc-worldichi/cabinet/13/4948872417419.jpg?_ex=300x300" alt="【新品】SIE PS5 プレイステーション5 デジタル・エディション 日本語専用 Console Language： J" loading="lazy"></div>
+  <div class="name">【新品】SIE PS5 プレイステーション5 デジタル・エディション 日本語専用 Console Language： Japanese only CFI-2200B01 825GB</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（87件）</span></div>
+  <div class="price">53,730<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">電子問屋ワールドいち</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a></div></main>
+<footer><div class="in">
+  <div class="links"><a href="../index.html">総合ランキング</a><a href="../trend.html">今話題</a><a href="../rise.html">急上昇</a><a href="../blog/index.html">ブログ</a><a href="../about.html">このサイトについて</a></div>
+  掲載情報は楽天市場の公式ランキングデータをもとに毎日自動更新しています。価格・在庫・ポイント倍率は変動しますので、最新情報は各商品ページ（楽天市場）でご確認ください。<br>
+  当サイトは楽天アフィリエイトに参加しており、リンク経由でお買い物いただくと当サイトに紹介料が入ることがあります（購入者の負担が増えることはありません）。<br>
+  <a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a><br>
+  最終更新: 2026年08月17日 15:42　&copy; 2026 今週の売れ筋ランキング
+</div></footer>
 </body>
 </html>

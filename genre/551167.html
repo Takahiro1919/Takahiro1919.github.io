@@ -4,334 +4,496 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>スイーツ・お菓子 売れ筋ランキング｜今週の売れ筋ランキング</title>
-<meta name="description" content="楽天市場のスイーツ・お菓子ジャンルで今売れている商品ランキング。順位変動つきで毎日自動更新。">
+<meta name="description" content="楽天市場のスイーツ・お菓子ジャンルで今売れている商品ランキングTOP30。順位変動つきで毎日自動更新。">
+<link rel="canonical" href="https://takahiro1919.github.io/genre/551167.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="今週の売れ筋ランキング">
+<meta property="og:title" content="スイーツ・お菓子 売れ筋ランキング">
+<meta property="og:description" content="楽天市場のスイーツ・お菓子ジャンルで今売れている商品ランキングTOP30。順位変動つきで毎日自動更新。">
+<meta property="og:url" content="https://takahiro1919.github.io/genre/551167.html">
+<meta property="og:image" content="https://thumbnail.image.rakuten.co.jp/@0_mall/kasyou-morin/cabinet/06855486/07563144/09185954/rinka-thum46812.jpg?_ex=300x300">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23bf0000'/%3E%3Ctext x='32' y='44' font-size='36' font-family='sans-serif' font-weight='700' fill='%23fff' text-anchor='middle'%3E1%3C/text%3E%3C/svg%3E">
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
-         background: #f5f5f7; color: #222; line-height: 1.5; }
-  a { color: inherit; }
-  header { background: #bf0000; color: #fff; padding: 18px 16px; text-align: center; }
-  header h1 { font-size: 22px; } header h1 a { text-decoration: none; }
-  header p { font-size: 13px; opacity: .9; margin-top: 4px; }
-  .pr { background: #fff3cd; color: #664d03; font-size: 12px; text-align: center; padding: 6px; }
-  .demo { background: #cfe2ff; color: #084298; font-size: 13px; text-align: center; padding: 8px; }
-  nav { background: #fff; border-bottom: 1px solid #e5e5e5; overflow-x: auto; white-space: nowrap;
-        padding: 8px 12px; -webkit-overflow-scrolling: touch; }
-  nav a { display: inline-block; font-size: 13px; padding: 5px 11px; margin-right: 6px;
-          border-radius: 16px; background: #f0f0f2; text-decoration: none; }
-  nav a.on, nav a:hover { background: #bf0000; color: #fff; }
-  main { max-width: 900px; margin: 0 auto; padding: 16px; }
-  h2 { font-size: 18px; margin: 18px 0 10px; border-left: 5px solid #bf0000; padding-left: 8px; }
-  .lead { font-size: 13px; color: #555; background: #fff; border-radius: 8px; padding: 10px 12px;
-          margin-bottom: 12px; }
-  .updated { font-size: 12px; color: #666; text-align: right; margin-bottom: 8px; }
-  .card { display: flex; gap: 12px; background: #fff; border-radius: 10px; padding: 12px;
-          margin-bottom: 10px; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
-  .card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.15); }
-  .rank { font-weight: bold; color: #bf0000; min-width: 44px; font-size: 15px; }
-  .rank small { display: block; font-size: 11px; font-weight: normal; margin-top: 2px; }
-  .up { color: #d9480f; } .down { color: #1971c2; } .new { color: #2b8a3e; } .same { color: #999; }
-  .thumb img, .noimg { width: 90px; height: 90px; object-fit: contain; background: #fafafa;
-                       border-radius: 6px; }
-  .noimg { display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 11px; }
-  .info { flex: 1; min-width: 0; }
-  .name { font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical; overflow: hidden; }
-  .price { color: #bf0000; font-weight: bold; font-size: 16px; margin-top: 6px; }
-  .meta { font-size: 12px; color: #888; margin-top: 2px; }
-  .badge { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px;
-           background: #ffe8cc; color: #d9480f; margin-left: 6px; }
-  .badge.streak { background: #fff3bf; color: #a07800; }
-  .badge.genre { background: #e7f5ff; color: #1971c2; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
-  .grid a { background: #fff; border-radius: 8px; padding: 10px; font-size: 13px;
-            text-decoration: none; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
-  .grid a:hover { background: #bf0000; color: #fff; }
-  .more { display: block; text-align: center; margin: 8px 0 16px; font-size: 14px; }
-  footer { text-align: center; font-size: 12px; color: #888; padding: 24px 16px; }
+:root{--red:#bf0000;--red-d:#9a0000;--ink:#1a1a1a;--sub:#666;--line:#e5e5e5;--bg:#f4f4f4;
+--gold:#e0a800;--silver:#8e97a8;--bronze:#b5733a;--up:#d9480f;--down:#1971c2;--new:#2b8a3e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;overflow-x:hidden}
+body{overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;
+background:var(--bg);color:var(--ink);line-height:1.55;font-size:15px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.pr{background:#fff8e1;color:#7a5a00;font-size:11px;text-align:center;padding:5px 8px}
+.top{background:var(--red);color:#fff}
+.top .in{max-width:1080px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{font-size:20px;font-weight:800;letter-spacing:.02em;display:flex;align-items:center;gap:8px;color:#fff}
+.logo .mark{background:#fff;color:var(--red);border-radius:6px;width:30px;height:30px;display:inline-flex;
+align-items:center;justify-content:center;font-size:17px;font-weight:900}
+.tag{font-size:12px;color:#fff;opacity:.9}
+.upd{margin-left:auto;font-size:12px;color:#fff;opacity:.9;white-space:nowrap}
+nav.tabs{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);
+box-shadow:0 1px 4px rgba(0,0,0,.05)}
+nav.tabs .in{max-width:1080px;margin:0 auto;overflow-x:auto;white-space:nowrap;padding:0 8px;
+scrollbar-width:none}
+nav.tabs .in::-webkit-scrollbar{display:none}
+nav.tabs a{display:inline-block;font-size:13px;font-weight:700;padding:11px 12px 9px;color:#333;
+border-bottom:3px solid transparent}
+nav.tabs a.on{color:var(--red);border-bottom-color:var(--red)}
+nav.tabs a:hover:not(.on){color:var(--red)}
+main{max-width:1080px;margin:0 auto;padding:16px 16px 40px}
+.crumb{font-size:12px;color:var(--sub);margin-bottom:10px}
+.crumb a{color:var(--sub)} .crumb a:hover{text-decoration:underline}
+h1{font-size:22px;font-weight:800;line-height:1.3;margin-bottom:6px}
+.lead{font-size:13px;color:var(--sub);margin-bottom:16px}
+h2{font-size:18px;font-weight:800;margin:28px 0 12px;display:flex;align-items:center;gap:8px}
+h2:before{content:"";width:5px;height:20px;background:var(--red);border-radius:3px}
+.sec-sub{font-size:12px;color:var(--sub);margin:-6px 0 12px 13px}
+/* TOP3 */
+.top3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.hero{background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px;position:relative;min-width:0;
+display:flex;flex-direction:column;transition:box-shadow .15s}
+.hero:hover{box-shadow:0 6px 18px rgba(0,0,0,.10)}
+.crown{position:absolute;top:10px;left:10px;z-index:1;color:#fff;font-weight:900;font-size:19px;width:42px;height:42px;
+border-radius:50%;display:flex;align-items:baseline;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,.25);
+border:2px solid #fff;line-height:38px;white-space:nowrap}
+.crown small{font-size:10px;font-weight:700;margin-left:1px}
+.r1 .crown{background:linear-gradient(135deg,#f5c542,#c9950c)} .r2 .crown{background:linear-gradient(135deg,#b8bec9,#7f8794)} .r3 .crown{background:linear-gradient(135deg,#d08a4e,#9c5a24)}
+.hero .img{aspect-ratio:1/1;border-radius:6px;background:#fff;overflow:hidden;margin:0 0 10px}
+.hero .img img{width:100%;height:100%;object-fit:contain}
+.name{font-size:14px;font-weight:600;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;
+-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em}
+.stars{font-size:12px;color:#f39800;margin-top:6px;display:flex;align-items:center;gap:4px}
+.stars .n{color:var(--sub)}
+.price{font-size:20px;font-weight:800;color:var(--red);margin-top:6px;line-height:1.2}
+.price small{font-size:12px;font-weight:600;margin-left:2px}
+.pt{display:inline-block;font-size:11px;font-weight:700;color:var(--red);background:#fff;border:1px solid var(--red);
+border-radius:3px;padding:0 5px;margin-left:6px;vertical-align:middle;line-height:1.5}
+.ship{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:#e64a19;
+border-radius:3px;padding:0 5px;margin-left:6px;vertical-align:middle;line-height:1.5}
+.shop{font-size:11px;color:var(--sub);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chg{font-size:11px;font-weight:700;margin-left:6px}
+.chg.up{color:var(--up)} .chg.down{color:var(--down)} .chg.new{color:var(--new)} .chg.same{color:#aaa}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 7px;border-radius:4px;margin-top:6px;margin-right:4px}
+.badge.streak{background:#fff3bf;color:#8a6d00}
+.badge.genre{background:#e7f5ff;color:#1971c2}
+.btn{margin-top:auto;padding-top:10px}
+.btn span{display:block;text-align:center;background:var(--red);color:#fff;font-weight:700;font-size:14px;
+padding:10px;border-radius:4px}
+.hero:hover .btn span,.card:hover .btn span{background:var(--red-d)}
+/* 4位以下 */
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px;position:relative;min-width:0;
+display:flex;flex-direction:column;transition:box-shadow .15s}
+.card:hover{box-shadow:0 6px 18px rgba(0,0,0,.10)}
+.card .rk{position:absolute;top:8px;left:8px;z-index:1;background:#fff;color:var(--red);font-size:12px;
+font-weight:900;padding:2px 8px;border-radius:4px;border:1px solid var(--red)}
+.card .img{aspect-ratio:1/1;border-radius:4px;background:#fff;overflow:hidden;margin-bottom:8px}
+.card .img img{width:100%;height:100%;object-fit:contain}
+.card .name{font-size:13px;min-height:2.8em}
+.card .price{font-size:17px}
+.card .btn span{font-size:13px;padding:8px}
+.noimg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#bbb;font-size:12px}
+/* 横スクロール（急上昇） */
+.rail{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+.rail .card{flex:0 0 200px;scroll-snap-align:start}
+.more{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--red)}
+.more:hover{text-decoration:underline}
+/* ジャンル一覧 */
+.genres{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.genres a{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 10px;font-size:13px;
+font-weight:600;display:flex;align-items:center;gap:8px}
+.genres a .ic{font-size:18px}
+.genres a:hover{border-color:var(--red);color:var(--red)}
+.summary{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13px;
+color:#444;margin-bottom:14px}
+.summary b{color:var(--ink)}
+.empty{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:24px;text-align:center;
+color:var(--sub);font-size:13px}
+/* ブログ */
+.posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.post{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.post:hover{box-shadow:0 6px 18px rgba(0,0,0,.10)}
+.pimg{aspect-ratio:16/9;background:#fafafa;overflow:hidden}
+.pimg img{width:100%;height:100%;object-fit:contain}
+.pbody{padding:10px 12px 12px}
+.pmeta{font-size:12px;color:var(--sub);margin-bottom:6px}
+.plabel{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:1px 7px;border-radius:3px;margin-right:6px}
+.ptitle{font-size:14px;font-weight:700;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pdesc{font-size:12px;color:var(--sub);margin-top:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+main.article{max-width:820px}
+main.article h1{font-size:24px;line-height:1.35;margin:6px 0 10px}
+main.article .intro,main.article .outro{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 16px;font-size:15px;line-height:1.8;margin:14px 0}
+.pitem{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin:14px 0}
+.pitem h2{font-size:17px;margin:0 0 10px;line-height:1.4}
+.pitem h2:before{height:18px}
+.pitem-in{display:flex;gap:14px}
+.pthumb{flex:0 0 160px;width:160px;aspect-ratio:1/1;background:#fafafa;border-radius:4px;overflow:hidden}
+.pthumb img{width:100%;height:100%;object-fit:contain}
+.ptext{flex:1;min-width:0}
+.ptext p{font-size:15px;line-height:1.8;color:#333;margin-bottom:8px}
+.pdata .price{font-size:20px}
+.pbtn{display:inline-block;margin-top:10px;background:var(--red);color:#fff;font-weight:700;font-size:14px;padding:9px 22px;border-radius:4px}
+.pbtn:hover{background:var(--red-d)}
+.note{font-size:12px;color:var(--sub);margin:12px 0}
+footer{background:#fff;border-top:1px solid var(--line);margin-top:30px}
+footer .in{max-width:1080px;margin:0 auto;padding:22px 16px;font-size:12px;color:var(--sub);line-height:1.8}
+footer .links a{margin-right:14px;font-weight:600;color:#444}
+footer .links a:hover{color:var(--red)}
+.about{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;font-size:14px}
+.about h3{font-size:15px;margin:18px 0 6px} .about h3:first-child{margin-top:0}
+.about p,.about li{color:#333} .about ul{padding-left:20px}
+@media (max-width:820px){
+  .posts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .top3{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .hero{padding:10px} .hero .img{margin:0 0 8px}
+  .hero .name{font-size:12px} .hero .price{font-size:16px} .hero .btn span{font-size:12px;padding:8px}
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+}
+@media (max-width:560px){
+  body{font-size:14px}
+  .top .in{padding:10px 12px} .logo{font-size:17px} .upd{display:none}
+  main{padding:12px 12px 32px}
+  h1{font-size:19px}
+  .top3{grid-template-columns:1fr}
+  .hero{flex-direction:row;flex-wrap:wrap;padding:12px}
+  .hero .img{flex:0 0 120px;width:120px;margin:0 12px 0 0}
+  .hero .body{flex:1;min-width:0}
+  .hero .btn{flex-basis:100%}
+  .hero .name{min-height:0}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .card .name{font-size:12px}
+  .genres{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .posts{grid-template-columns:1fr}
+  .post{flex-direction:row} .pimg{flex:0 0 120px;aspect-ratio:1/1}
+  main.article h1{font-size:20px}
+  .pitem-in{flex-direction:column} .pthumb{width:100%;max-width:220px;margin:0 auto}
+  .pbtn{display:block;text-align:center}
+}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "スイーツ・お菓子 売れ筋ランキング 2026年08月17日", "url": "https://takahiro1919.github.io/genre/551167.html", "numberOfItems": 30, "itemListElement": [{"@type": "ListItem", "position": 30, "name": "お中元 御中元 残暑見舞い ギフト スイーツ お菓子 敬老の日 送料無料 おしゃれ 高級 誕生日プレゼント 凛菓 ティラミス 詰め合わせ 抹茶スイーツ ほうじ茶 栗 黒胡麻 ケーキ 和菓子 瓶 お取り寄せスイーツ 人気 ランキング 誕生日スイーツ 出産 内祝い お返し お礼 贈り物", "url": "https://hb.afl.rakuten.co.jp/hgc/g00rrzlo.1ae4t48a.g00rrzlo.1ae4u2f6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkasyou-morin%2Ftiramisu-6%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/kasyou-morin/cabinet/06855486/07563144/09185954/rinka-thum46812.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 29, "name": "【公式】 東京 銀座 資生堂パーラー ゼリー フリュイジュレ 8個入 FG30 フルーツゼリー 5種8個 詰め合わせゼリーギフト ジュレ 白桃 マンゴー チェリー はっさく ラ・フランス スイーツ お中元 ギフト 2026 御中元 暑中見舞い 帰省 手土産 東京土産 2025年8万個販売", "url": "https://hb.afl.rakuten.co.jp/hgc/g00rbf6o.1ae4t5a2.g00rbf6o.1ae4u44d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshiseido-parlour%2F75612%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/shiseido-parlour/cabinet/06857522/fg/75612_2025_thum.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 28, "name": "お中元 お菓子 ギフト 詰め合わせ 手土産 内祝い お返し お礼 個包装 焼き菓子 洋菓子 スイーツ プレゼント フィナンシェHFM-30N2 フィナンシェ・マドレーヌ詰合せ 2種 19個入", "url": "https://hb.afl.rakuten.co.jp/hgc/g00qsfxo.1ae4t413.g00qsfxo.1ae4u8dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhenri-charpentier%2F771330%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/specialfeature/summergift2026/hfm-30n2_260602.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 27, "name": "売切れ間近！早い者勝ち！ リンツ リンドール LINDOR チョコレート アソート 36個 48個 60個 レビュー投稿で100円クーポン 6種 4種 3種 ミルク ホワイト ダーク 600g 48粒 Lindt ボンボン チョコ ホワイトデー お返し チョコ プチギフト", "url": "https://hb.afl.rakuten.co.jp/hgc/g00tx9ao.1ae4t95b.g00tx9ao.1ae4ufdc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsuzuyaebisudo%2Fr-lindor-48%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/suzuyaebisudo/cabinet/product/item02/lindor-48-12_01v12.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 26, "name": "ブルーシール アイス 12個セット 詰め合わせ ギフト 12個入り アイスクリーム 送料無料 ギフト お中元 内祝い お礼 誕生日 お祝 お返し お取り寄せ 沖縄土産 ギフト ステイホーム ご自宅用　ブルーシール詰合せギフト12（沖縄・北海道・離島は送料別）", "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfp4o.1ae4t492.g00tfp4o.1ae4u180/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fokinawa-icecream%2F10000001%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/okinawa-icecream/cabinet/gifuto/13246696/12.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 25, "name": "御中元 お中元 残暑見舞い ギフト スイーツ 敬老の日 早割 お菓子 ゼリー ギフト 高級 おしゃれ 誕生日プレゼント 彩果の恵み チーズケーキ 詰め合わせ プリン ケーキ フルーツ 乳酸菌 希少糖 ヘルシー お取り寄せスイーツ 洋菓子 出産 内祝い お返し お礼 送料無料 夏ギフト", "url": "https://hb.afl.rakuten.co.jp/hgc/g00rrzlo.1ae4t48a.g00rrzlo.1ae4u2f6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkasyou-morin%2Fmorin-healthy-01%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/kasyou-morin/cabinet/05776678/12290198/saika-sum.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 24, "name": "カシューナッツ 1kg 産地直輸入 ロースト 素焼き 無塩 無添加 専用アルミチャック付き袋", "url": "https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fn-1k-002%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/20260402-cs-1kg-r.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 23, "name": "お中元 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ プレゼント お菓子 内祝い 誕生日 お祝い 御礼 快気内祝 お見舞い のし対応【季節限定】HTF-45N2 テリーヌ・ドゥ・フリュイ 9個入 ※お届けは9/22まで", "url": "https://hb.afl.rakuten.co.jp/hgc/g00qsfxo.1ae4t413.g00qsfxo.1ae4u8dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhenri-charpentier%2F772346%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/specialfeature/summergift2026/htf-45n2_260619.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 22, "name": "＼3年連続／ 2025年楽天グルメ大賞受賞 【メープルバタークッキー】選べる入数 ザ・メープルマニア お菓子 ギフト 詰め合わせ 個包装 クッキー ラングドシャ 焼き菓子 洋菓子 プレゼント 内祝 お返し お祝 退職 お中元 御中元 夏ギフト 暑中見舞い", "url": "https://hb.afl.rakuten.co.jp/hgc/g00tq9ao.1ae4te35.g00tq9ao.1ae4u2b5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsucreyshop%2Ftmm01101f%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sucreyshop/cabinet/tmm/tmm01101f_thm_v1.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 21, "name": "アイス ギフト 高級 ランキング1位 『 選べる ジェラート 6個 詰め合わせ 』 送料無料 お中元 御中元 夏ギフト アイスギフト アイスクリーム シャーベット ソルベ フルーツアイス スイーツ 贈り物 セット 熊本 老舗 ヘルシー 低脂質 ご褒美 誕生日 内祝い お返し お祝い", "url": "https://hb.afl.rakuten.co.jp/hgc/g00twe2o.1ae4t2cb.g00twe2o.1ae4u7d5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgran-kaju%2Fgelato-b%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/gran-kaju/cabinet/gelato/12980139/gelato-b-26ss.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 20, "name": "デーツ 1kg 送料無料　無農薬 高品質なイラン産デーツ使用　種なしデーツ　ドライフルーツ　おやつ　【無添加・無塩・無植物油】", "url": "https://hb.afl.rakuten.co.jp/hgc/g00trtso.1ae4t0b0.g00trtso.1ae4uefe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnuthyougo%2Fitem019%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/nuthyougo/cabinet/item019-05.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 19, "name": "【期間限定★50%OFFクーポン】お中元 夏ギフト チョコレート フェレロ ラファエロ Ferrero Raffaello ココナッツ アーモンド ギフト プレゼント 個包装 詰め合わせ セット お菓子 15粒", "url": "https://hb.afl.rakuten.co.jp/hgc/g00ujwvo.1ae4t7b0.g00ujwvo.1ae4ud3b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fferrero-japan-official%2Ffer-rat1502%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ferrero-japan-official/cabinet/ferreroraffaello/10524480/imgrc0105023635.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 18, "name": "ポイント2倍〜 お中元 夏ギフト 2026 アイスクリーム アイス フルーツアイス お菓子 スイーツ 贈り物 ギフト 千疋屋 パティスリー銀座千疋屋 送料無料 銀座プレミアムアイス＆ソルベ 8個入", "url": "https://hb.afl.rakuten.co.jp/hgc/g00qi0bo.1ae4t1dc.g00qi0bo.1ae4u60e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fginza-sembikiya%2F876881%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ginza-sembikiya/cabinet/img/frozen/pgs-039/pgs-039-3.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 17, "name": "銀座千疋屋 ［3年連続楽天グルメ大賞受賞］［アイス5個 ソルベ5個］ NEW銀座プレミアムアイス＆ソルベ （10個入り）［送料無料］［ポイント2倍］〜 お中元 御中元 父の日 母の日 アイス ギフト 贈り物 スイーツ プレゼント 内祝い千疋屋 〜", "url": "https://hb.afl.rakuten.co.jp/hgc/g00qyzbo.1ae4tc61.g00qyzbo.1ae4u8ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F1894ginza-sembikiya%2F10000629%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/1894ginza-sembikiya/cabinet/09510189/230101.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 16, "name": "＼楽天ランキング入賞★2026累計販売個数4,988個！／お中元 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ お菓子 内祝い お祝い 御礼 快気内祝 お見舞い のし対応【季節限定】HTF-30ASN2A テリーヌ・ドゥ・フリュイ・アソート MA※お届けは9/22まで", "url": "https://hb.afl.rakuten.co.jp/hgc/g00qsfxo.1ae4t413.g00qsfxo.1ae4u8dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhenri-charpentier%2F772348%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/specialfeature/summergift2026/htf-30asn2_a_260602.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 15, "name": "アメリカ産ピーナッツ入り5種ミックスナッツ 1kg ハイオレイックピーナッツ アーモンド 生くるみ カシューナッツ マカダミアナッツ 落花生 素焼き 無塩 たんぱく質 添加物不使用 おつまみ おやつ チャック付き", "url": "https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fhipn-5mix-1kg%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/260623-hipn5mx-1kg-r.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 14, "name": "【特別価格】日本橋 千疋屋総本店 フルートジェリー 9本入｜父の日 ギフト ゼリー 詰め合わせお祝い 誕生日 結婚 出産 内祝い お返し お礼 贈り物 贈答品 お見舞い お供え 御供 香典返し お中元", "url": "https://hb.afl.rakuten.co.jp/hgc/g00pan5o.1ae4t985.g00pan5o.1ae4u122/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsembikiya%2F0854-33sm%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sembikiya/cabinet/00435300/09444386/imgrc0100450877.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 13, "name": "お中元ギフト ワッフル ケーキ 10個 | お菓子 洋菓子 詰め合わせ ギフト 個包装 お中元 御中元 ワッフルケーキ スイーツ 冷凍 お取り寄せスイーツ 女性 彼女 妻 お中元スイーツギフト 誕生日プレゼント ワッフルサンド かわいい おしゃれ 手土産 お礼 3000円 送料無料", "url": "https://hb.afl.rakuten.co.jp/hgc/g00pq4wo.1ae4tcde.g00pq4wo.1ae4ude5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frl-waffle%2Fw0010%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/rl-waffle/cabinet/w0010/dad.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 12, "name": "＼楽天グルメ大賞！高評価★4.7超／ お中元 スイーツ 夏 ギフト 残暑見舞い 敬老の日 健康 ヘルシー 洋菓子 お菓子 デザート アイス チョコ 誕生日 プレゼント バースデー ケーキ セット 詰め合わせ 食べ物 おしゃれ 乳酸菌スイーツアソート", "url": "https://hb.afl.rakuten.co.jp/hgc/g00q2tfo.1ae4t13e.g00q2tfo.1ae4uaaf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftenshi-okurimono%2Fte015_healthy_sweets_assort%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tenshi-okurimono/cabinet/te015var/sg/te015var_sn1sg25.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 11, "name": "【楽天1位 期間限定ポイント5倍】 夏の京銘菓 詰め合わせ【公式】京都 鼓月 送料無料 / お中元 中元 和菓子 京都 老舗 最強配送 暑中見舞い 残暑見舞い 夏ギフト 手土産 お土産 帰省 初盆 盆 お盆 夏 内祝 お見舞い 出産 結婚祝い ギフト 高級 贈り物 お供", "url": "https://hb.afl.rakuten.co.jp/hgc/g00ra5do.1ae4te7e.g00ra5do.1ae4ua76/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkogetsu%2F1000389%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/kogetsu/cabinet/k/chugen26/13605627/mkr50_5up.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 10, "name": "銀座千疋屋 ［3年連続楽天グルメ大賞受賞］銀座ゼリー（9個入り）［［送料無料］［ポイント2倍］〜 お中元 御中元 父の日 母の日 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ プレゼント お菓子 内祝い 誕生日 お祝い 御礼 快気内祝 千疋屋 〜", "url": "https://hb.afl.rakuten.co.jp/hgc/g00qyzbo.1ae4tc61.g00qyzbo.1ae4u8ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F1894ginza-sembikiya%2F10000240%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/1894ginza-sembikiya/cabinet/04020656/imgrc0116822282.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 9, "name": "6種類24個入り 【送料無料】フロム蔵王 Hybrid NEOマルチアイスBOX24【アイスクリーム ギフト 詰め合わせ】", "url": "https://hb.afl.rakuten.co.jp/hgc/g00pxiao.1ae4te96.g00pxiao.1ae4u90b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffrom-zao%2F1027763%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/from-zao/cabinet/ice/multiice-neo720.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 8, "name": "ポイント2倍〜 お中元 夏ギフト 2026 ゼリー フルーツゼリー お菓子 スイーツ 贈り物 ギフト 千疋屋 パティスリー銀座千疋屋 送料無料 銀座ゼリー9個", "url": "https://hb.afl.rakuten.co.jp/hgc/g00qi0bo.1ae4t1dc.g00qi0bo.1ae4u60e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fginza-sembikiya%2F899270%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ginza-sembikiya/cabinet/img/jelly/pgs-061/pgs-061-2.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 7, "name": "4種ミックスナッツ 850g 産地直輸入 無塩 添加物不使用 植物油不使用 素焼き (アーモンド等級：US Extra No.1) 常備食 アーモンド くるみ カシューナッツ マカダミア", "url": "https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2F4mx_850g%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/20260529-4mx-850-r.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 6, "name": "【送料無料】【公式】ヨックモック サンク デリス 5種44個入 お中元 夏ギフト 2026 お盆 お供え 詰め合わせ プレゼント スイーツ ギフト プチギフト クッキー 退職 洋菓子 お菓子 焼き菓子 手土産 個包装 お取り寄せ お礼 お祝い", "url": "https://hb.afl.rakuten.co.jp/hgc/g00rvx6o.1ae4t12f.g00rvx6o.1ae4u6d4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokumoku%2F1010011409010%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yokumoku/cabinet/yokumoku_thumbnail/ss/10346534/cinq_delice44_a.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 5, "name": "3種 ミックスナッツ 無添加 850g 産地直輸入 くるみ アーモンド カシューナッツ 無塩 添加物不使用 植物油不使用", "url": "https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fn-1g-010%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/260522-3mx-850g-r.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 4, "name": "アーモンド 1kg USエクストラNo.1等級 【楽天グルメ大賞アーモンド部門5年連続受賞】 素焼きアーモンド 送料無料 カリフォルニア産 産地直輸入 素焼き煎りたて 常備食 無塩 添加物不使用 植物油不使用", "url": "https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fn-1k-001%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/20260305-ad-1kg-r.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 3, "name": "≪初めてなら★511円OFFクーポン≫ナッツ ミックスナッツ 無塩/有塩 無添加 ラッキーミックスナッツ アーモンド 素焼き 4種 3種 600g プレミアム 送料無料 くるみ カシューナッツ マカダミアナッツ", "url": "https://hb.afl.rakuten.co.jp/hgc/g00pvlao.1ae4t5fd.g00pvlao.1ae4u37c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshizennoyakata%2Fmixnutsofaphantom-spsale%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/shizennoyakata/cabinet/item_img/saleitem/1699_newmixnuts_sg2.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 2, "name": "【25% OFFクーポン利用で2,990円⇒2,243円！8/18 23:59まで】【定期購入特典有】お中元 ギフト 干し芋 茨城県産 紅はるか 訳あり 1kg 食べ物 和菓子 おやつ 送料無料 国産 無添加 切り落とし さつまいも スイーツ ダイエット お菓子 和スイーツ お祝い N1", "url": "https://hb.afl.rakuten.co.jp/hgc/g00tzq1o.1ae4t6a5.g00tzq1o.1ae4uc16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fimokuniya%2F10000012%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/imokuniya/cabinet/08486723/tb3/0814_cptb_n1_teiki.jpg?_ex=300x300"}, {"@type": "ListItem", "position": 1, "name": "ミックスナッツ 1kg 送料無料 素焼きミックスナッツ 大人気3種類素焼きナッツ プレミアム ミックスナッツ 素焼きアーモンド 素焼きカシューナッツ 生くるみ 自然 ナッツ おつまみ おやつ『無添加・無塩・植物油不使用』", "url": "https://hb.afl.rakuten.co.jp/hgc/g00trtso.1ae4t0b0.g00trtso.1ae4uefe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnuthyougo%2Fitem610%2F&rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d", "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/nuthyougo/cabinet/item610.jpg?_ex=300x300"}]}</script>
 </head>
 <body>
 <div class="pr">【PR】当サイトはアフィリエイト広告（楽天アフィリエイト）を利用しています</div>
-<header>
-  <h1><a href="../index.html">今週の売れ筋ランキング</a></h1>
-  <p>楽天市場の売れ筋を毎日自動更新。順位の変動・急上昇がひと目でわかります</p>
-</header>
+<div class="top"><div class="in">
+  <a class="logo" href="../index.html"><span class="mark">1</span>今週の売れ筋ランキング</a>
+  <span class="tag">楽天市場の売れ筋を毎日自動更新</span>
+  <span class="upd">更新 08/17 15:42</span>
+</div></div>
 
-<nav><a href="../index.html">総合</a><a href="../rise.html">急上昇</a><a href="../genre/100371.html">レディースファッション</a><a href="../genre/551177.html">メンズファッション</a><a href="../genre/100433.html">インナー・下着・ナイトウェア</a><a href="../genre/216131.html">バッグ・小物・ブランド雑貨</a><a href="../genre/558885.html">靴</a><a href="../genre/558929.html">腕時計</a><a href="../genre/216129.html">ジュエリー・アクセサリー</a><a href="../genre/100533.html">キッズ・ベビー・マタニティ</a><a href="../genre/566382.html">おもちゃ</a><a href="../genre/101070.html">スポーツ・アウトドア</a><a href="../genre/562637.html">家電</a><a href="../genre/211742.html">TV・オーディオ・カメラ</a><a href="../genre/100026.html">パソコン・周辺機器</a><a href="../genre/564500.html">スマートフォン・タブレット</a><a href="../genre/565004.html">光回線・モバイル通信</a><a href="../genre/100227.html">食品</a><a href="../genre/551167.html" class=on>スイーツ・お菓子</a><a href="../genre/100316.html">水・ソフトドリンク</a><a href="../genre/510915.html">ビール・洋酒</a><a href="../genre/510901.html">日本酒・焼酎</a><a href="../genre/100804.html">インテリア・寝具・収納</a><a href="../genre/215783.html">日用品雑貨・文房具・手芸</a><a href="../genre/558944.html">キッチン用品・食器・調理器具</a><a href="../genre/200162.html">本・雑誌・コミック</a><a href="../genre/101240.html">CD・DVD</a><a href="../genre/101205.html">テレビゲーム</a><a href="../genre/101164.html">ホビー</a><a href="../genre/112493.html">楽器・音響機器</a><a href="../genre/101114.html">車・バイク</a><a href="../genre/503190.html">車用品・バイク用品</a></nav><main><div class="updated">最終更新: 2026年08月17日 14:52</div><h2>スイーツ・お菓子 売れ筋ランキング</h2><p class="lead">楽天市場「スイーツ・お菓子」ジャンルの売れ筋。掲載30商品、価格帯 480円〜5,555円（中央値 3,240円）。</p>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00twe2o.1ae4t2cb.g00twe2o.1ae4u7d5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgran-kaju%2Fgelato-b%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">30位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/gran-kaju/cabinet/gelato/12980139/gelato-b-26ss.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">アイス ギフト 高級 ランキング1位 『 選べる ジェラート 6個 詰め合わせ 』 送料無料 お中元 御中元 夏ギフト アイスギフト アイスクリーム シャーベット ソルベ フルーツアイス スイーツ 贈り物 セット 熊本 老舗 ヘルシー 低脂質 ご褒美 誕生日 内祝い お返し お祝い</div>
-        <div class="price">3,880円</div>
-        <div class="meta">グラン菓樹　レビュー239件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q2tfo.1ae4t13e.g00q2tfo.1ae4uaaf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftenshi-okurimono%2Fte015_healthy_sweets_assort%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">29位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/tenshi-okurimono/cabinet/te015var/sg/te015var_sn1sg25.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">＼楽天グルメ大賞！高評価★4.7超／ お中元 スイーツ 夏 ギフト 残暑見舞い 敬老の日 健康 ヘルシー 洋菓子 お菓子 デザート アイス チョコ 誕生日 プレゼント バースデー ケーキ セット 詰め合わせ 食べ物 おしゃれ 乳酸菌スイーツアソート</div>
-        <div class="price">3,999円</div>
-        <div class="meta">パティスリー天使のおくりもの　レビュー3,657件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qyzbo.1ae4tc61.g00qyzbo.1ae4u8ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F1894ginza-sembikiya%2F10000629%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">28位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/1894ginza-sembikiya/cabinet/09510189/230101.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">銀座千疋屋 ［3年連続楽天グルメ大賞受賞］［アイス5個 ソルベ5個］ NEW銀座プレミアムアイス＆ソルベ （10個入り）［送料無料］［ポイント2倍］〜 お中元 御中元 父の日 母の日 アイス ギフト 贈り物 スイーツ プレゼント 内祝い千疋屋 〜</div>
-        <div class="price">5,400円</div>
-        <div class="meta">銀座千疋屋　レビュー1,127件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fn-1k-002%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">27位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/20260402-cs-1kg-r.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">カシューナッツ 1kg 産地直輸入 ロースト 素焼き 無塩 無添加 専用アルミチャック付き袋</div>
-        <div class="price">2,290円</div>
-        <div class="meta">calinuts　レビュー4,543件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00psxco.1ae4t42e.g00psxco.1ae4udee/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fito-noen%2Fjd-8%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">26位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ito-noen/cabinet/jurecategory/jd-6_8_0623.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【ポイント10倍◆8/19(水)9:59まで】お中元 御中元 暑中見舞い お供え ゼリー ギフ 詰め合わせ みかんゼリー フルーツゼリー ゼリー飲料 みかん 洋菓子 スイーツ 150g 8個 無添加 国産 贈答用 プレゼント 誕生日 内祝い 結婚祝い 出産祝い 出産内祝い おしゃれ</div>
-        <div class="price">3,280円</div>
-        <div class="meta">伊藤農園【ジュースと果実】　レビュー580件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t4pzo.1ae4t584.g00t4pzo.1ae4u294/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkonigs-krone%2Fvariety-pack-s%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">25位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/konigs-krone/cabinet/item/wake/wake_s_2025_01.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【送料無料】訳あり特得バラエティーパックS【5の付く日は訳あり販売日！】お菓子 ギフト 詰合せ 訳ありアソート ショップバック 小分け袋付き 焼菓子 5の付く日 パイ スティッククッキーマドレーヌ お土産 バレンタイン ホワイトデー 手土産 ギフト ケーニヒス クローネ</div>
-        <div class="price">3,240円</div>
-        <div class="meta">ケーニヒス クローネ　レビュー252件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rrzlo.1ae4t48a.g00rrzlo.1ae4u2f6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkasyou-morin%2Ftiramisu-6%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">24位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kasyou-morin/cabinet/06855486/07563144/09185954/rinka-thum46812.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">お中元 御中元 残暑見舞い ギフト スイーツ お菓子 敬老の日 送料無料 おしゃれ 高級 誕生日プレゼント 凛菓 ティラミス 詰め合わせ 抹茶スイーツ ほうじ茶 栗 黒胡麻 ケーキ 和菓子 瓶 お取り寄せスイーツ 人気 ランキング 誕生日スイーツ 出産 内祝い お返し お礼 贈り物</div>
-        <div class="price">3,580円</div>
-        <div class="meta">Morin（もりん）　レビュー1,214件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pq4wo.1ae4tcde.g00pq4wo.1ae4ude5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frl-waffle%2Fw0010%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">23位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/rl-waffle/cabinet/w0010/dad.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">お中元ギフト ワッフル ケーキ 10個 | お菓子 洋菓子 詰め合わせ ギフト 個包装 お中元 御中元 ワッフルケーキ スイーツ 冷凍 お取り寄せスイーツ 女性 彼女 妻 お中元スイーツギフト 誕生日プレゼント ワッフルサンド かわいい おしゃれ 手土産 お礼 3000円 送料無料</div>
-        <div class="price">3,000円</div>
-        <div class="meta">ワッフル・ケーキの店R．L　レビュー6,954件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qsfxo.1ae4t413.g00qsfxo.1ae4u8dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhenri-charpentier%2F772346%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">22位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/specialfeature/summergift2026/htf-45n2_260619.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">お中元 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ プレゼント お菓子 内祝い 誕生日 お祝い 御礼 快気内祝 お見舞い のし対応【季節限定】HTF-45N2 テリーヌ・ドゥ・フリュイ 9個入 ※お届けは9/22まで</div>
-        <div class="price">4,860円</div>
-        <div class="meta">アンリ・シャルパンティエ　レビュー688件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00redso.1ae4t627.g00redso.1ae4uc30/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fthreenice%2F20000693%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">21位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/threenice/cabinet/aiga-/50fuku_2.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">これまでに5万個以上売れた 超お買い得 アイスクリーム福袋 合計40〜50個入り (中身は当店お任せ) アイスクリーム アイス 福袋 詰め合わせ 大容量 訳あり 　fukubukuro</div>
-        <div class="price">5,555円</div>
-        <div class="meta">のみモン　レビュー3,664件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rkigo.1ae4t77b.g00rkigo.1ae4u7d7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyummy39%2Falmondf_0001%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">20位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yummy39/cabinet/afv2/500_af320_sale.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【決算最終セール】大容量320gアーモンド小魚【楽天年間ランキング2025入賞】 小魚アーモンド アーモンドフィッシュ （素焼き粒orカットタイプ） こざかな 素焼きアーモンド 無塩アーモンド 国産 瀬戸内産 九州産 チャック付き ナッツ カルシウム 給食 海と太陽</div>
-        <div class="price">1,111円</div>
-        <div class="meta">おいしいものショップ「海と太陽」　レビュー23,970件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rayyo.1ae4t7fe.g00rayyo.1ae4u6b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffukucha%2Fchocorich-wake%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">19位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/fukucha/cabinet/chocoriche/waker/wake_5_00.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【8月12日から順次発送】ギフト ショコリッシュ 自分チョコ 生チョコ 義理チョコ 会社 スイーツ チョコ 生チョコアイス 個包装 チョコレート トリュフ 大容量 いちごミルク 抹茶あずき 瀬戸内レモン リッチショコラ 訳ありショコリッシュ</div>
-        <div class="price">3,680円</div>
-        <div class="meta">健康茶通販×ふくちゃ楽天市場店　レビュー2,904件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qyzbo.1ae4tc61.g00qyzbo.1ae4u8ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F1894ginza-sembikiya%2F10000240%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">18位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/1894ginza-sembikiya/cabinet/04020656/imgrc0116822282.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">銀座千疋屋 ［3年連続楽天グルメ大賞受賞］銀座ゼリー（9個入り）［［送料無料］［ポイント2倍］〜 お中元 御中元 父の日 母の日 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ プレゼント お菓子 内祝い 誕生日 お祝い 御礼 快気内祝 千疋屋 〜</div>
-        <div class="price">3,240円</div>
-        <div class="meta">銀座千疋屋　レビュー1,987件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00trtso.1ae4t0b0.g00trtso.1ae4uefe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnuthyougo%2Fitem001%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">17位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/nuthyougo/cabinet/item001.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">アーモンド 1kg 素焼きアーモンド 完全無添加 アメリカ産 高品質 アーモンド 大人気 カリフォルニア産 素焼きナッツ 新鮮 チャック付き おやつ おつまみ 健康 ナッツ『無添加・無塩・植物油不使用』</div>
-        <div class="price">1,999円</div>
-        <div class="meta">NUT HYOUGO 商店　レビュー571件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00trtso.1ae4t0b0.g00trtso.1ae4uefe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnuthyougo%2Fitem004-a%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">16位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/nuthyougo/cabinet/item004.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">くるみ 1kg 送料無料 生くるみ　生クルミ　大人気 高品質なアメリカ産生くるみ使用『無添加・無塩・植物油不使用』</div>
-        <div class="price">1,999円</div>
-        <div class="meta">NUT HYOUGO 商店　レビュー610件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pwf8o.1ae4t9c7.g00pwf8o.1ae4u1c5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyunan%2Fosacana%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">15位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kyunan/cabinet/snack/osacana/osakana_summer2026.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">＼夏のボーナスウィーク 最大500円OFFクーポン／小魚アーモンド こざかな アーモンド アーモンドフィッシュ おやつ OH！オサカーナ | カルシウム 送料無料 おさかな プロテイン DHA EPA 健康 スイーツ ポイント消化 お中元 プチギフト おつまみ お買い物マラソン</div>
-        <div class="price">480円</div>
-        <div class="meta">タマチャンショップ　レビュー15,804件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qsfxo.1ae4t413.g00qsfxo.1ae4u8dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhenri-charpentier%2F772345%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">14位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/specialfeature/summergift2026/htf-30asn2_260602.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">お中元 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ プレゼント お菓子 内祝い 誕生日 お祝い 御礼 快気内祝 お見舞い のし対応【季節限定】HTF-30N2 テリーヌ・ドゥ・フリュイ 6個入 ※お届けは9/22まで</div>
-        <div class="price">3,240円</div>
-        <div class="meta">アンリ・シャルパンティエ　レビュー260件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fhipn-5mix-1kg%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">13位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/260623-hipn5mx-1kg-r.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">アメリカ産ピーナッツ入り5種ミックスナッツ 1kg ハイオレイックピーナッツ アーモンド 生くるみ カシューナッツ マカダミアナッツ 落花生 素焼き 無塩 たんぱく質 添加物不使用 おつまみ おやつ チャック付き</div>
-        <div class="price">1,680円</div>
-        <div class="meta">calinuts　レビュー2,129件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00ra5do.1ae4te7e.g00ra5do.1ae4ua76/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkogetsu%2F1000389%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">12位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kogetsu/cabinet/k/chugen26/13605627/mkr50_5up.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【楽天1位 期間限定ポイント5倍】 夏の京銘菓 詰め合わせ【公式】京都 鼓月 送料無料 / お中元 中元 和菓子 京都 老舗 最強配送 暑中見舞い 残暑見舞い 夏ギフト 手土産 お土産 帰省 初盆 盆 お盆 夏 内祝 お見舞い 出産 結婚祝い ギフト 高級 贈り物 お供</div>
-        <div class="price">3,780円</div>
-        <div class="meta">京菓子處 鼓月　楽天市場店　レビュー371件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00trtso.1ae4t0b0.g00trtso.1ae4uefe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnuthyougo%2Fitem019%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">11位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/nuthyougo/cabinet/item019-05.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">デーツ 1kg 送料無料　無農薬 高品質なイラン産デーツ使用　種なしデーツ　ドライフルーツ　おやつ　【無添加・無塩・無植物油】</div>
-        <div class="price">1,330円</div>
-        <div class="meta">NUT HYOUGO 商店　レビュー3,206件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pxiao.1ae4te96.g00pxiao.1ae4u90b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffrom-zao%2F1027763%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">10位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/from-zao/cabinet/ice/multiice-neo720.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">6種類24個入り 【送料無料】フロム蔵王 Hybrid NEOマルチアイスBOX24【アイスクリーム ギフト 詰め合わせ】</div>
-        <div class="price">3,680円</div>
-        <div class="meta">フロム蔵王楽天市場店　レビュー8,199件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qi0bo.1ae4t1dc.g00qi0bo.1ae4u60e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fginza-sembikiya%2F876881%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">9位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ginza-sembikiya/cabinet/img/frozen/pgs-039/pgs-039-3.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">ポイント2倍〜 お中元 夏ギフト 2026 アイスクリーム アイス フルーツアイス お菓子 スイーツ 贈り物 ギフト 千疋屋 パティスリー銀座千疋屋 送料無料 銀座プレミアムアイス＆ソルベ 8個入</div>
-        <div class="price">4,104円</div>
-        <div class="meta">パティスリー銀座千疋屋楽天市場店　レビュー1,537件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rvx6o.1ae4t12f.g00rvx6o.1ae4u6d4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokumoku%2F1010011409010%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">8位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yokumoku/cabinet/yokumoku_thumbnail/ss/10346534/cinq_delice44_a.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【送料無料】【公式】ヨックモック サンク デリス 5種44個入 お中元 夏ギフト 2026 お盆 お供え 詰め合わせ プレゼント スイーツ ギフト プチギフト クッキー 退職 洋菓子 お菓子 焼き菓子 手土産 個包装 お取り寄せ お礼 お祝い</div>
-        <div class="price">3,672円</div>
-        <div class="meta">ヨックモック　楽天市場店　レビュー2,104件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qi0bo.1ae4t1dc.g00qi0bo.1ae4u60e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fginza-sembikiya%2F899270%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">7位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ginza-sembikiya/cabinet/img/jelly/pgs-061/pgs-061-2.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">ポイント2倍〜 お中元 夏ギフト 2026 ゼリー フルーツゼリー お菓子 スイーツ 贈り物 ギフト 千疋屋 パティスリー銀座千疋屋 送料無料 銀座ゼリー9個</div>
-        <div class="price">3,240円</div>
-        <div class="meta">パティスリー銀座千疋屋楽天市場店　レビュー1,096件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pvlao.1ae4t5fd.g00pvlao.1ae4u37c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshizennoyakata%2Fmixnutsofaphantom-spsale%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">6位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/shizennoyakata/cabinet/item_img/saleitem/1699_newmixnuts_sg2.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">≪初めてなら★511円OFFクーポン≫ナッツ ミックスナッツ 無塩/有塩 無添加 ラッキーミックスナッツ アーモンド 素焼き 4種 3種 600g プレミアム 送料無料 くるみ カシューナッツ マカダミアナッツ</div>
-        <div class="price">1,950円</div>
-        <div class="meta">美味しさは元気の源 【自然の館】　レビュー33,727件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2F4mx_850g%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">5位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/20260529-4mx-850-r.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">4種ミックスナッツ 850g 産地直輸入 無塩 添加物不使用 植物油不使用 素焼き (アーモンド等級：US Extra No.1) 常備食 アーモンド くるみ カシューナッツ マカダミア</div>
-        <div class="price">1,690円</div>
-        <div class="meta">calinuts　レビュー17,814件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00tzq1o.1ae4t6a5.g00tzq1o.1ae4uc16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fimokuniya%2F10000012%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">4位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/imokuniya/cabinet/08486723/tb3/0814_cptb_n1_teiki.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">【25% OFFクーポン利用で2,990円⇒2,243円！8/18 23:59まで】【定期購入特典有】お中元 ギフト 干し芋 茨城県産 紅はるか 訳あり 1kg 食べ物 和菓子 おやつ 送料無料 国産 無添加 切り落とし さつまいも スイーツ ダイエット お菓子 和スイーツ お祝い N1</div>
-        <div class="price">2,990円</div>
-        <div class="meta">芋國屋　レビュー36,209件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fn-1k-001%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">3位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/20260305-ad-1kg-r.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">アーモンド 1kg USエクストラNo.1等級 【楽天グルメ大賞アーモンド部門5年連続受賞】 素焼きアーモンド 送料無料 カリフォルニア産 産地直輸入 素焼き煎りたて 常備食 無塩 添加物不使用 植物油不使用</div>
-        <div class="price">2,090円</div>
-        <div class="meta">calinuts　レビュー53,707件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fn-1g-010%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">2位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/260522-3mx-850g-r.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">3種 ミックスナッツ 無添加 850g 産地直輸入 くるみ アーモンド カシューナッツ 無塩 添加物不使用 植物油不使用</div>
-        <div class="price">1,650円</div>
-        <div class="meta">calinuts　レビュー47,405件</div>
-      </div>
-    </a>
-    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00trtso.1ae4t0b0.g00trtso.1ae4uefe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnuthyougo%2Fitem610%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
-      <div class="rank">1位</div>
-      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/nuthyougo/cabinet/item610.jpg?_ex=300x300" alt="" loading="lazy"></div>
-      <div class="info">
-        <div class="name">ミックスナッツ 1kg 送料無料 素焼きミックスナッツ 大人気3種類素焼きナッツ プレミアム ミックスナッツ 素焼きアーモンド 素焼きカシューナッツ 生くるみ 自然 ナッツ おつまみ おやつ『無添加・無塩・植物油不使用』</div>
-        <div class="price">1,860円</div>
-        <div class="meta">NUT HYOUGO 商店　レビュー2,190件</div>
-      </div>
-    </a></main>
-<footer>
-  最終更新: 2026年08月17日 14:52　価格・在庫は変動します。最新情報はリンク先（楽天市場）でご確認ください。<br>
-  &copy; 2026 今週の売れ筋ランキング
-</footer>
+<nav class="tabs"><div class="in"><a href="../index.html">総合</a><a href="../trend.html">💬 今話題</a><a href="../rise.html">🔥 急上昇</a><a href="../blog/index.html">📝 ブログ</a><a href="../genre/100371.html">レディースファッション</a><a href="../genre/551177.html">メンズファッション</a><a href="../genre/100433.html">インナー・下着・ナイトウェア</a><a href="../genre/216131.html">バッグ・小物・ブランド雑貨</a><a href="../genre/558885.html">靴</a><a href="../genre/558929.html">腕時計</a><a href="../genre/216129.html">ジュエリー・アクセサリー</a><a href="../genre/100533.html">キッズ・ベビー・マタニティ</a><a href="../genre/566382.html">おもちゃ</a><a href="../genre/101070.html">スポーツ・アウトドア</a><a href="../genre/562637.html">家電</a><a href="../genre/211742.html">TV・オーディオ・カメラ</a><a href="../genre/100026.html">パソコン・周辺機器</a><a href="../genre/564500.html">スマートフォン・タブレット</a><a href="../genre/565004.html">光回線・モバイル通信</a><a href="../genre/100227.html">食品</a><a href="../genre/551167.html" class=on>スイーツ・お菓子</a><a href="../genre/100316.html">水・ソフトドリンク</a><a href="../genre/510915.html">ビール・洋酒</a><a href="../genre/510901.html">日本酒・焼酎</a><a href="../genre/100804.html">インテリア・寝具・収納</a><a href="../genre/215783.html">日用品雑貨・文房具・手芸</a><a href="../genre/558944.html">キッチン用品・食器・調理器具</a><a href="../genre/200162.html">本・雑誌・コミック</a><a href="../genre/101240.html">CD・DVD</a><a href="../genre/101205.html">テレビゲーム</a><a href="../genre/101164.html">ホビー</a><a href="../genre/112493.html">楽器・音響機器</a><a href="../genre/101114.html">車・バイク</a><a href="../genre/503190.html">車用品・バイク用品</a></div></nav><main><div class="crumb"><a href="../index.html">ホーム</a> › スイーツ・お菓子</div><h1>🍰 スイーツ・お菓子 売れ筋ランキング TOP30（2026年08月17日）</h1><p class="lead">楽天市場「スイーツ・お菓子」ジャンルで今売れている商品のランキング。毎日自動更新、前回からの順位変動つき。</p><div class="summary">掲載 <b>30商品</b>　|　価格帯 <b>1,188〜5,400円</b>（中央値 3,240円）</div><div class="top3">
+<a class="hero r1" href="https://hb.afl.rakuten.co.jp/hgc/g00trtso.1ae4t0b0.g00trtso.1ae4uefe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnuthyougo%2Fitem610%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="crown">1<small>位</small></div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/nuthyougo/cabinet/item610.jpg?_ex=300x300" alt="ミックスナッツ 1kg 送料無料 素焼きミックスナッツ 大人気3種類素焼きナッツ プレミアム ミックスナッツ 素焼きアー" loading="lazy"></div>
+  <div class="body">
+    <div class="name">ミックスナッツ 1kg 送料無料 素焼きミックスナッツ 大人気3種類素焼きナッツ プレミアム ミックスナッツ 素焼きアーモンド 素焼きカシューナッツ 生くるみ 自然 ナッツ おつまみ おやつ『無添加・無塩・植物油不使用』</div>
+    <div class="stars"><span>★★★★★</span><span class="n">4.5（2,199件）</span></div>
+    <div class="price">1,860<small>円</small><span class="ship">送料無料</span></div>
+    <div class="shop">NUT HYOUGO 商店</div>
+    
+  </div>
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="hero r2" href="https://hb.afl.rakuten.co.jp/hgc/g00tzq1o.1ae4t6a5.g00tzq1o.1ae4uc16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fimokuniya%2F10000012%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="crown">2<small>位</small></div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/imokuniya/cabinet/08486723/tb3/0814_cptb_n1_teiki.jpg?_ex=300x300" alt="【25% OFFクーポン利用で2,990円⇒2,243円！8/18 23:59まで】【定期購入特典有】お中元 ギフト 干" loading="lazy"></div>
+  <div class="body">
+    <div class="name">【25% OFFクーポン利用で2,990円⇒2,243円！8/18 23:59まで】【定期購入特典有】お中元 ギフト 干し芋 茨城県産 紅はるか 訳あり 1kg 食べ物 和菓子 おやつ 送料無料 国産 無添加 切り落とし さつまいも スイーツ ダイエット お菓子 和スイーツ お祝い N1</div>
+    <div class="stars"><span>★★★★★</span><span class="n">4.6（36,214件）</span></div>
+    <div class="price">2,990<small>円</small><span class="ship">送料無料</span></div>
+    <div class="shop">芋國屋</div>
+    
+  </div>
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="hero r3" href="https://hb.afl.rakuten.co.jp/hgc/g00pvlao.1ae4t5fd.g00pvlao.1ae4u37c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshizennoyakata%2Fmixnutsofaphantom-spsale%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="crown">3<small>位</small></div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/shizennoyakata/cabinet/item_img/saleitem/1699_newmixnuts_sg2.jpg?_ex=300x300" alt="≪初めてなら★511円OFFクーポン≫ナッツ ミックスナッツ 無塩/有塩 無添加 ラッキーミックスナッツ アーモンド 素" loading="lazy"></div>
+  <div class="body">
+    <div class="name">≪初めてなら★511円OFFクーポン≫ナッツ ミックスナッツ 無塩/有塩 無添加 ラッキーミックスナッツ アーモンド 素焼き 4種 3種 600g プレミアム 送料無料 くるみ カシューナッツ マカダミアナッツ</div>
+    <div class="stars"><span>★★★★★</span><span class="n">4.6（33,728件）</span></div>
+    <div class="price">1,950<small>円</small><span class="ship">送料無料</span></div>
+    <div class="shop">美味しさは元気の源 【自然の館】</div>
+    
+  </div>
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a></div><div class="grid" style="margin-top:12px">
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fn-1k-001%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">4位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/20260305-ad-1kg-r.jpg?_ex=300x300" alt="アーモンド 1kg USエクストラNo.1等級 【楽天グルメ大賞アーモンド部門5年連続受賞】 素焼きアーモンド 送料無料" loading="lazy"></div>
+  <div class="name">アーモンド 1kg USエクストラNo.1等級 【楽天グルメ大賞アーモンド部門5年連続受賞】 素焼きアーモンド 送料無料 カリフォルニア産 産地直輸入 素焼き煎りたて 常備食 無塩 添加物不使用 植物油不使用</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（53,712件）</span></div>
+  <div class="price">2,090<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">calinuts</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fn-1g-010%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">5位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/260522-3mx-850g-r.jpg?_ex=300x300" alt="3種 ミックスナッツ 無添加 850g 産地直輸入 くるみ アーモンド カシューナッツ 無塩 添加物不使用 植物油不使用" loading="lazy"></div>
+  <div class="name">3種 ミックスナッツ 無添加 850g 産地直輸入 くるみ アーモンド カシューナッツ 無塩 添加物不使用 植物油不使用</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（47,414件）</span></div>
+  <div class="price">1,650<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">calinuts</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rvx6o.1ae4t12f.g00rvx6o.1ae4u6d4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokumoku%2F1010011409010%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">6位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yokumoku/cabinet/yokumoku_thumbnail/ss/10346534/cinq_delice44_a.jpg?_ex=300x300" alt="【送料無料】【公式】ヨックモック サンク デリス 5種44個入 お中元 夏ギフト 2026 お盆 お供え 詰め合わせ プ" loading="lazy"></div>
+  <div class="name">【送料無料】【公式】ヨックモック サンク デリス 5種44個入 お中元 夏ギフト 2026 お盆 お供え 詰め合わせ プレゼント スイーツ ギフト プチギフト クッキー 退職 洋菓子 お菓子 焼き菓子 手土産 個包装 お取り寄せ お礼 お祝い</div>
+  <div class="stars"><span>★★★★☆</span><span class="n">4.5（2,105件）</span></div>
+  <div class="price">3,672<small>円</small></div>
+  <div class="shop">ヨックモック　楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2F4mx_850g%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">7位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/20260529-4mx-850-r.jpg?_ex=300x300" alt="4種ミックスナッツ 850g 産地直輸入 無塩 添加物不使用 植物油不使用 素焼き (アーモンド等級：US Extra " loading="lazy"></div>
+  <div class="name">4種ミックスナッツ 850g 産地直輸入 無塩 添加物不使用 植物油不使用 素焼き (アーモンド等級：US Extra No.1) 常備食 アーモンド くるみ カシューナッツ マカダミア</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（17,817件）</span></div>
+  <div class="price">1,690<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">calinuts</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qi0bo.1ae4t1dc.g00qi0bo.1ae4u60e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fginza-sembikiya%2F899270%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">8位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ginza-sembikiya/cabinet/img/jelly/pgs-061/pgs-061-2.jpg?_ex=300x300" alt="ポイント2倍〜 お中元 夏ギフト 2026 ゼリー フルーツゼリー お菓子 スイーツ 贈り物 ギフト 千疋屋 パティスリ" loading="lazy"></div>
+  <div class="name">ポイント2倍〜 お中元 夏ギフト 2026 ゼリー フルーツゼリー お菓子 スイーツ 贈り物 ギフト 千疋屋 パティスリー銀座千疋屋 送料無料 銀座ゼリー9個</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（1,099件）</span></div>
+  <div class="price">3,240<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">パティスリー銀座千疋屋楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pxiao.1ae4te96.g00pxiao.1ae4u90b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffrom-zao%2F1027763%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">9位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/from-zao/cabinet/ice/multiice-neo720.jpg?_ex=300x300" alt="6種類24個入り 【送料無料】フロム蔵王 Hybrid NEOマルチアイスBOX24【アイスクリーム ギフト 詰め合わせ" loading="lazy"></div>
+  <div class="name">6種類24個入り 【送料無料】フロム蔵王 Hybrid NEOマルチアイスBOX24【アイスクリーム ギフト 詰め合わせ】</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.5（8,202件）</span></div>
+  <div class="price">3,680<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">フロム蔵王楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qyzbo.1ae4tc61.g00qyzbo.1ae4u8ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F1894ginza-sembikiya%2F10000240%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">10位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/1894ginza-sembikiya/cabinet/04020656/imgrc0116822282.jpg?_ex=300x300" alt="銀座千疋屋 ［3年連続楽天グルメ大賞受賞］銀座ゼリー（9個入り）［［送料無料］［ポイント2倍］〜 お中元 御中元 父の日" loading="lazy"></div>
+  <div class="name">銀座千疋屋 ［3年連続楽天グルメ大賞受賞］銀座ゼリー（9個入り）［［送料無料］［ポイント2倍］〜 お中元 御中元 父の日 母の日 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ プレゼント お菓子 内祝い 誕生日 お祝い 御礼 快気内祝 千疋屋 〜</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（1,989件）</span></div>
+  <div class="price">3,240<small>円</small><span class="ship">送料無料</span><span class="pt">ポイント2倍</span></div>
+  <div class="shop">銀座千疋屋</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00ra5do.1ae4te7e.g00ra5do.1ae4ua76/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkogetsu%2F1000389%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">11位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kogetsu/cabinet/k/chugen26/13605627/mkr50_5up.jpg?_ex=300x300" alt="【楽天1位 期間限定ポイント5倍】 夏の京銘菓 詰め合わせ【公式】京都 鼓月 送料無料 / お中元 中元 和菓子 京都 " loading="lazy"></div>
+  <div class="name">【楽天1位 期間限定ポイント5倍】 夏の京銘菓 詰め合わせ【公式】京都 鼓月 送料無料 / お中元 中元 和菓子 京都 老舗 最強配送 暑中見舞い 残暑見舞い 夏ギフト 手土産 お土産 帰省 初盆 盆 お盆 夏 内祝 お見舞い 出産 結婚祝い ギフト 高級 贈り物 お供</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.8（378件）</span></div>
+  <div class="price">3,780<small>円</small><span class="ship">送料無料</span><span class="pt">ポイント5倍</span></div>
+  <div class="shop">京菓子處 鼓月　楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q2tfo.1ae4t13e.g00q2tfo.1ae4uaaf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftenshi-okurimono%2Fte015_healthy_sweets_assort%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">12位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/tenshi-okurimono/cabinet/te015var/sg/te015var_sn1sg25.jpg?_ex=300x300" alt="＼楽天グルメ大賞！高評価★4.7超／ お中元 スイーツ 夏 ギフト 残暑見舞い 敬老の日 健康 ヘルシー 洋菓子 お菓子" loading="lazy"></div>
+  <div class="name">＼楽天グルメ大賞！高評価★4.7超／ お中元 スイーツ 夏 ギフト 残暑見舞い 敬老の日 健康 ヘルシー 洋菓子 お菓子 デザート アイス チョコ 誕生日 プレゼント バースデー ケーキ セット 詰め合わせ 食べ物 おしゃれ 乳酸菌スイーツアソート</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（3,657件）</span></div>
+  <div class="price">3,999<small>円</small><span class="pt">ポイント5倍</span></div>
+  <div class="shop">パティスリー天使のおくりもの</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pq4wo.1ae4tcde.g00pq4wo.1ae4ude5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frl-waffle%2Fw0010%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">13位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/rl-waffle/cabinet/w0010/dad.jpg?_ex=300x300" alt="お中元ギフト ワッフル ケーキ 10個 | お菓子 洋菓子 詰め合わせ ギフト 個包装 お中元 御中元 ワッフルケーキ " loading="lazy"></div>
+  <div class="name">お中元ギフト ワッフル ケーキ 10個 | お菓子 洋菓子 詰め合わせ ギフト 個包装 お中元 御中元 ワッフルケーキ スイーツ 冷凍 お取り寄せスイーツ 女性 彼女 妻 お中元スイーツギフト 誕生日プレゼント ワッフルサンド かわいい おしゃれ 手土産 お礼 3000円 送料無料</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（6,954件）</span></div>
+  <div class="price">3,000<small>円</small><span class="ship">送料無料</span><span class="pt">ポイント5倍</span></div>
+  <div class="shop">ワッフル・ケーキの店R．L</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pan5o.1ae4t985.g00pan5o.1ae4u122/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsembikiya%2F0854-33sm%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">14位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/sembikiya/cabinet/00435300/09444386/imgrc0100450877.jpg?_ex=300x300" alt="【特別価格】日本橋 千疋屋総本店 フルートジェリー 9本入｜父の日 ギフト ゼリー 詰め合わせお祝い 誕生日 結婚 出産" loading="lazy"></div>
+  <div class="name">【特別価格】日本橋 千疋屋総本店 フルートジェリー 9本入｜父の日 ギフト ゼリー 詰め合わせお祝い 誕生日 結婚 出産 内祝い お返し お礼 贈り物 贈答品 お見舞い お供え 御供 香典返し お中元</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.8（491件）</span></div>
+  <div class="price">3,888<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">千疋屋総本店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fhipn-5mix-1kg%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">15位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/260623-hipn5mx-1kg-r.jpg?_ex=300x300" alt="アメリカ産ピーナッツ入り5種ミックスナッツ 1kg ハイオレイックピーナッツ アーモンド 生くるみ カシューナッツ マカ" loading="lazy"></div>
+  <div class="name">アメリカ産ピーナッツ入り5種ミックスナッツ 1kg ハイオレイックピーナッツ アーモンド 生くるみ カシューナッツ マカダミアナッツ 落花生 素焼き 無塩 たんぱく質 添加物不使用 おつまみ おやつ チャック付き</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（2,133件）</span></div>
+  <div class="price">1,680<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">calinuts</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qsfxo.1ae4t413.g00qsfxo.1ae4u8dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhenri-charpentier%2F772348%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">16位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/specialfeature/summergift2026/htf-30asn2_a_260602.jpg?_ex=300x300" alt="＼楽天ランキング入賞★2026累計販売個数4,988個！／お中元 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ" loading="lazy"></div>
+  <div class="name">＼楽天ランキング入賞★2026累計販売個数4,988個！／お中元 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ お菓子 内祝い お祝い 御礼 快気内祝 お見舞い のし対応【季節限定】HTF-30ASN2A テリーヌ・ドゥ・フリュイ・アソート MA※お届けは9/22まで</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（1,320件）</span></div>
+  <div class="price">3,240<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">アンリ・シャルパンティエ</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qyzbo.1ae4tc61.g00qyzbo.1ae4u8ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F1894ginza-sembikiya%2F10000629%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">17位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/1894ginza-sembikiya/cabinet/09510189/230101.jpg?_ex=300x300" alt="銀座千疋屋 ［3年連続楽天グルメ大賞受賞］［アイス5個 ソルベ5個］ NEW銀座プレミアムアイス＆ソルベ （10個入り）" loading="lazy"></div>
+  <div class="name">銀座千疋屋 ［3年連続楽天グルメ大賞受賞］［アイス5個 ソルベ5個］ NEW銀座プレミアムアイス＆ソルベ （10個入り）［送料無料］［ポイント2倍］〜 お中元 御中元 父の日 母の日 アイス ギフト 贈り物 スイーツ プレゼント 内祝い千疋屋 〜</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（1,131件）</span></div>
+  <div class="price">5,400<small>円</small><span class="ship">送料無料</span><span class="pt">ポイント2倍</span></div>
+  <div class="shop">銀座千疋屋</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qi0bo.1ae4t1dc.g00qi0bo.1ae4u60e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fginza-sembikiya%2F876881%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">18位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ginza-sembikiya/cabinet/img/frozen/pgs-039/pgs-039-3.jpg?_ex=300x300" alt="ポイント2倍〜 お中元 夏ギフト 2026 アイスクリーム アイス フルーツアイス お菓子 スイーツ 贈り物 ギフト 千" loading="lazy"></div>
+  <div class="name">ポイント2倍〜 お中元 夏ギフト 2026 アイスクリーム アイス フルーツアイス お菓子 スイーツ 贈り物 ギフト 千疋屋 パティスリー銀座千疋屋 送料無料 銀座プレミアムアイス＆ソルベ 8個入</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（1,540件）</span></div>
+  <div class="price">4,104<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">パティスリー銀座千疋屋楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00ujwvo.1ae4t7b0.g00ujwvo.1ae4ud3b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fferrero-japan-official%2Ffer-rat1502%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">19位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ferrero-japan-official/cabinet/ferreroraffaello/10524480/imgrc0105023635.jpg?_ex=300x300" alt="【期間限定★50%OFFクーポン】お中元 夏ギフト チョコレート フェレロ ラファエロ Ferrero Raffaell" loading="lazy"></div>
+  <div class="name">【期間限定★50%OFFクーポン】お中元 夏ギフト チョコレート フェレロ ラファエロ Ferrero Raffaello ココナッツ アーモンド ギフト プレゼント 個包装 詰め合わせ セット お菓子 15粒</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.8（46件）</span></div>
+  <div class="price">1,740<small>円</small></div>
+  <div class="shop">フェレロ （FERRERO） 楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00trtso.1ae4t0b0.g00trtso.1ae4uefe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnuthyougo%2Fitem019%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">20位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/nuthyougo/cabinet/item019-05.jpg?_ex=300x300" alt="デーツ 1kg 送料無料　無農薬 高品質なイラン産デーツ使用　種なしデーツ　ドライフルーツ　おやつ　【無添加・無塩・無植" loading="lazy"></div>
+  <div class="name">デーツ 1kg 送料無料　無農薬 高品質なイラン産デーツ使用　種なしデーツ　ドライフルーツ　おやつ　【無添加・無塩・無植物油】</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（3,211件）</span></div>
+  <div class="price">1,330<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">NUT HYOUGO 商店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00twe2o.1ae4t2cb.g00twe2o.1ae4u7d5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgran-kaju%2Fgelato-b%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">21位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/gran-kaju/cabinet/gelato/12980139/gelato-b-26ss.jpg?_ex=300x300" alt="アイス ギフト 高級 ランキング1位 『 選べる ジェラート 6個 詰め合わせ 』 送料無料 お中元 御中元 夏ギフト " loading="lazy"></div>
+  <div class="name">アイス ギフト 高級 ランキング1位 『 選べる ジェラート 6個 詰め合わせ 』 送料無料 お中元 御中元 夏ギフト アイスギフト アイスクリーム シャーベット ソルベ フルーツアイス スイーツ 贈り物 セット 熊本 老舗 ヘルシー 低脂質 ご褒美 誕生日 内祝い お返し お祝い</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.8（240件）</span></div>
+  <div class="price">3,880<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">グラン菓樹</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00tq9ao.1ae4te35.g00tq9ao.1ae4u2b5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsucreyshop%2Ftmm01101f%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">22位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/sucreyshop/cabinet/tmm/tmm01101f_thm_v1.jpg?_ex=300x300" alt="＼3年連続／ 2025年楽天グルメ大賞受賞 【メープルバタークッキー】選べる入数 ザ・メープルマニア お菓子 ギフト 詰" loading="lazy"></div>
+  <div class="name">＼3年連続／ 2025年楽天グルメ大賞受賞 【メープルバタークッキー】選べる入数 ザ・メープルマニア お菓子 ギフト 詰め合わせ 個包装 クッキー ラングドシャ 焼き菓子 洋菓子 プレゼント 内祝 お返し お祝 退職 お中元 御中元 夏ギフト 暑中見舞い</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.8（1,386件）</span></div>
+  <div class="price">1,188<small>円</small></div>
+  <div class="shop">シュクレイ楽天市場店</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qsfxo.1ae4t413.g00qsfxo.1ae4u8dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhenri-charpentier%2F772346%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">23位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/specialfeature/summergift2026/htf-45n2_260619.jpg?_ex=300x300" alt="お中元 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ プレゼント お菓子 内祝い 誕生日 お祝い 御礼 快気内" loading="lazy"></div>
+  <div class="name">お中元 ゼリー ギフト 詰め合わせ 贈り物 フルーツ スイーツ プレゼント お菓子 内祝い 誕生日 お祝い 御礼 快気内祝 お見舞い のし対応【季節限定】HTF-45N2 テリーヌ・ドゥ・フリュイ 9個入 ※お届けは9/22まで</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（692件）</span></div>
+  <div class="price">4,860<small>円</small><span class="ship">送料無料</span><span class="pt">ポイント5倍</span></div>
+  <div class="shop">アンリ・シャルパンティエ</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00s4zro.1ae4t62b.g00s4zro.1ae4u238/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcalinuts%2Fn-1k-002%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">24位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/calinuts/cabinet/promotion/original-main/20260402-cs-1kg-r.jpg?_ex=300x300" alt="カシューナッツ 1kg 産地直輸入 ロースト 素焼き 無塩 無添加 専用アルミチャック付き袋" loading="lazy"></div>
+  <div class="name">カシューナッツ 1kg 産地直輸入 ロースト 素焼き 無塩 無添加 専用アルミチャック付き袋</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（4,544件）</span></div>
+  <div class="price">2,290<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">calinuts</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rrzlo.1ae4t48a.g00rrzlo.1ae4u2f6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkasyou-morin%2Fmorin-healthy-01%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">25位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kasyou-morin/cabinet/05776678/12290198/saika-sum.jpg?_ex=300x300" alt="御中元 お中元 残暑見舞い ギフト スイーツ 敬老の日 早割 お菓子 ゼリー ギフト 高級 おしゃれ 誕生日プレゼント " loading="lazy"></div>
+  <div class="name">御中元 お中元 残暑見舞い ギフト スイーツ 敬老の日 早割 お菓子 ゼリー ギフト 高級 おしゃれ 誕生日プレゼント 彩果の恵み チーズケーキ 詰め合わせ プリン ケーキ フルーツ 乳酸菌 希少糖 ヘルシー お取り寄せスイーツ 洋菓子 出産 内祝い お返し お礼 送料無料 夏ギフト</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（2,651件）</span></div>
+  <div class="price">3,240<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">Morin（もりん）</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00tfp4o.1ae4t492.g00tfp4o.1ae4u180/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fokinawa-icecream%2F10000001%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">26位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/okinawa-icecream/cabinet/gifuto/13246696/12.jpg?_ex=300x300" alt="ブルーシール アイス 12個セット 詰め合わせ ギフト 12個入り アイスクリーム 送料無料 ギフト お中元 内祝い お" loading="lazy"></div>
+  <div class="name">ブルーシール アイス 12個セット 詰め合わせ ギフト 12個入り アイスクリーム 送料無料 ギフト お中元 内祝い お礼 誕生日 お祝 お返し お取り寄せ 沖縄土産 ギフト ステイホーム ご自宅用　ブルーシール詰合せギフト12（沖縄・北海道・離島は送料別）</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（363件）</span></div>
+  <div class="price">4,968<small>円</small><span class="pt">ポイント2倍</span></div>
+  <div class="shop">okinawaアイスクリーム</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00tx9ao.1ae4t95b.g00tx9ao.1ae4ufdc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsuzuyaebisudo%2Fr-lindor-48%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">27位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/suzuyaebisudo/cabinet/product/item02/lindor-48-12_01v12.jpg?_ex=300x300" alt="売切れ間近！早い者勝ち！ リンツ リンドール LINDOR チョコレート アソート 36個 48個 60個 レビュー投稿" loading="lazy"></div>
+  <div class="name">売切れ間近！早い者勝ち！ リンツ リンドール LINDOR チョコレート アソート 36個 48個 60個 レビュー投稿で100円クーポン 6種 4種 3種 ミルク ホワイト ダーク 600g 48粒 Lindt ボンボン チョコ ホワイトデー お返し チョコ プチギフト</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.6（2,819件）</span></div>
+  <div class="price">2,480<small>円</small></div>
+  <div class="shop">すずや恵比寿堂</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qsfxo.1ae4t413.g00qsfxo.1ae4u8dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhenri-charpentier%2F771330%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">28位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/specialfeature/summergift2026/hfm-30n2_260602.jpg?_ex=300x300" alt="お中元 お菓子 ギフト 詰め合わせ 手土産 内祝い お返し お礼 個包装 焼き菓子 洋菓子 スイーツ プレゼント フィナ" loading="lazy"></div>
+  <div class="name">お中元 お菓子 ギフト 詰め合わせ 手土産 内祝い お返し お礼 個包装 焼き菓子 洋菓子 スイーツ プレゼント フィナンシェHFM-30N2 フィナンシェ・マドレーヌ詰合せ 2種 19個入</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.8（3,218件）</span></div>
+  <div class="price">3,240<small>円</small><span class="ship">送料無料</span><span class="pt">ポイント5倍</span></div>
+  <div class="shop">アンリ・シャルパンティエ</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rbf6o.1ae4t5a2.g00rbf6o.1ae4u44d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshiseido-parlour%2F75612%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">29位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/shiseido-parlour/cabinet/06857522/fg/75612_2025_thum.jpg?_ex=300x300" alt="【公式】 東京 銀座 資生堂パーラー ゼリー フリュイジュレ 8個入 FG30 フルーツゼリー 5種8個 詰め合わせゼリ" loading="lazy"></div>
+  <div class="name">【公式】 東京 銀座 資生堂パーラー ゼリー フリュイジュレ 8個入 FG30 フルーツゼリー 5種8個 詰め合わせゼリーギフト ジュレ 白桃 マンゴー チェリー はっさく ラ・フランス スイーツ お中元 ギフト 2026 御中元 暑中見舞い 帰省 手土産 東京土産 2025年8万個販売</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（353件）</span></div>
+  <div class="price">3,240<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">資生堂パーラー</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a>
+<a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rrzlo.1ae4t48a.g00rrzlo.1ae4u2f6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkasyou-morin%2Ftiramisu-6%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+  <div class="rk">30位</div>
+  <div class="img"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kasyou-morin/cabinet/06855486/07563144/09185954/rinka-thum46812.jpg?_ex=300x300" alt="お中元 御中元 残暑見舞い ギフト スイーツ お菓子 敬老の日 送料無料 おしゃれ 高級 誕生日プレゼント 凛菓 ティラ" loading="lazy"></div>
+  <div class="name">お中元 御中元 残暑見舞い ギフト スイーツ お菓子 敬老の日 送料無料 おしゃれ 高級 誕生日プレゼント 凛菓 ティラミス 詰め合わせ 抹茶スイーツ ほうじ茶 栗 黒胡麻 ケーキ 和菓子 瓶 お取り寄せスイーツ 人気 ランキング 誕生日スイーツ 出産 内祝い お返し お礼 贈り物</div>
+  <div class="stars"><span>★★★★★</span><span class="n">4.7（1,214件）</span></div>
+  <div class="price">3,580<small>円</small><span class="ship">送料無料</span></div>
+  <div class="shop">Morin（もりん）</div>
+  
+  <div class="btn"><span>楽天市場で見る</span></div>
+</a></div></main>
+<footer><div class="in">
+  <div class="links"><a href="../index.html">総合ランキング</a><a href="../trend.html">今話題</a><a href="../rise.html">急上昇</a><a href="../blog/index.html">ブログ</a><a href="../about.html">このサイトについて</a></div>
+  掲載情報は楽天市場の公式ランキングデータをもとに毎日自動更新しています。価格・在庫・ポイント倍率は変動しますので、最新情報は各商品ページ（楽天市場）でご確認ください。<br>
+  当サイトは楽天アフィリエイトに参加しており、リンク経由でお買い物いただくと当サイトに紹介料が入ることがあります（購入者の負担が増えることはありません）。<br>
+  <a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a><br>
+  最終更新: 2026年08月17日 15:42　&copy; 2026 今週の売れ筋ランキング
+</div></footer>
 </body>
 </html>
