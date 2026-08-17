@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>本・雑誌・コミック 売れ筋ランキング｜今週の売れ筋ランキング</title>
+<meta name="description" content="楽天市場の本・雑誌・コミックジャンルで今売れている商品ランキング。順位変動つきで毎日自動更新。">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+         background: #f5f5f7; color: #222; line-height: 1.5; }
+  a { color: inherit; }
+  header { background: #bf0000; color: #fff; padding: 18px 16px; text-align: center; }
+  header h1 { font-size: 22px; } header h1 a { text-decoration: none; }
+  header p { font-size: 13px; opacity: .9; margin-top: 4px; }
+  .pr { background: #fff3cd; color: #664d03; font-size: 12px; text-align: center; padding: 6px; }
+  .demo { background: #cfe2ff; color: #084298; font-size: 13px; text-align: center; padding: 8px; }
+  nav { background: #fff; border-bottom: 1px solid #e5e5e5; overflow-x: auto; white-space: nowrap;
+        padding: 8px 12px; -webkit-overflow-scrolling: touch; }
+  nav a { display: inline-block; font-size: 13px; padding: 5px 11px; margin-right: 6px;
+          border-radius: 16px; background: #f0f0f2; text-decoration: none; }
+  nav a.on, nav a:hover { background: #bf0000; color: #fff; }
+  main { max-width: 900px; margin: 0 auto; padding: 16px; }
+  h2 { font-size: 18px; margin: 18px 0 10px; border-left: 5px solid #bf0000; padding-left: 8px; }
+  .lead { font-size: 13px; color: #555; background: #fff; border-radius: 8px; padding: 10px 12px;
+          margin-bottom: 12px; }
+  .updated { font-size: 12px; color: #666; text-align: right; margin-bottom: 8px; }
+  .card { display: flex; gap: 12px; background: #fff; border-radius: 10px; padding: 12px;
+          margin-bottom: 10px; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.15); }
+  .rank { font-weight: bold; color: #bf0000; min-width: 44px; font-size: 15px; }
+  .rank small { display: block; font-size: 11px; font-weight: normal; margin-top: 2px; }
+  .up { color: #d9480f; } .down { color: #1971c2; } .new { color: #2b8a3e; } .same { color: #999; }
+  .thumb img, .noimg { width: 90px; height: 90px; object-fit: contain; background: #fafafa;
+                       border-radius: 6px; }
+  .noimg { display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 11px; }
+  .info { flex: 1; min-width: 0; }
+  .name { font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical; overflow: hidden; }
+  .price { color: #bf0000; font-weight: bold; font-size: 16px; margin-top: 6px; }
+  .meta { font-size: 12px; color: #888; margin-top: 2px; }
+  .badge { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px;
+           background: #ffe8cc; color: #d9480f; margin-left: 6px; }
+  .badge.streak { background: #fff3bf; color: #a07800; }
+  .badge.genre { background: #e7f5ff; color: #1971c2; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .grid a { background: #fff; border-radius: 8px; padding: 10px; font-size: 13px;
+            text-decoration: none; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .grid a:hover { background: #bf0000; color: #fff; }
+  .more { display: block; text-align: center; margin: 8px 0 16px; font-size: 14px; }
+  footer { text-align: center; font-size: 12px; color: #888; padding: 24px 16px; }
+</style>
+</head>
+<body>
+<div class="pr">【PR】当サイトはアフィリエイト広告（楽天アフィリエイト）を利用しています</div>
+<header>
+  <h1><a href="../index.html">今週の売れ筋ランキング</a></h1>
+  <p>楽天市場の売れ筋を毎日自動更新。順位の変動・急上昇がひと目でわかります</p>
+</header>
+
+<nav><a href="../index.html">総合</a><a href="../rise.html">急上昇</a><a href="../genre/100371.html">レディースファッション</a><a href="../genre/551177.html">メンズファッション</a><a href="../genre/100433.html">インナー・下着・ナイトウェア</a><a href="../genre/216131.html">バッグ・小物・ブランド雑貨</a><a href="../genre/558885.html">靴</a><a href="../genre/558929.html">腕時計</a><a href="../genre/216129.html">ジュエリー・アクセサリー</a><a href="../genre/100533.html">キッズ・ベビー・マタニティ</a><a href="../genre/566382.html">おもちゃ</a><a href="../genre/101070.html">スポーツ・アウトドア</a><a href="../genre/562637.html">家電</a><a href="../genre/211742.html">TV・オーディオ・カメラ</a><a href="../genre/100026.html">パソコン・周辺機器</a><a href="../genre/564500.html">スマートフォン・タブレット</a><a href="../genre/565004.html">光回線・モバイル通信</a><a href="../genre/100227.html">食品</a><a href="../genre/551167.html">スイーツ・お菓子</a><a href="../genre/100316.html">水・ソフトドリンク</a><a href="../genre/510915.html">ビール・洋酒</a><a href="../genre/510901.html">日本酒・焼酎</a><a href="../genre/100804.html">インテリア・寝具・収納</a><a href="../genre/215783.html">日用品雑貨・文房具・手芸</a><a href="../genre/558944.html">キッチン用品・食器・調理器具</a><a href="../genre/200162.html" class=on>本・雑誌・コミック</a><a href="../genre/101240.html">CD・DVD</a><a href="../genre/101205.html">テレビゲーム</a><a href="../genre/101164.html">ホビー</a><a href="../genre/112493.html">楽器・音響機器</a><a href="../genre/101114.html">車・バイク</a><a href="../genre/503190.html">車用品・バイク用品</a></nav><main><div class="updated">最終更新: 2026年08月17日 14:07</div><h2>本・雑誌・コミック 売れ筋ランキング</h2><p class="lead">楽天市場「本・雑誌・コミック」ジャンルの売れ筋。掲載30商品、価格帯 594円〜22,000円（中央値 2,310円）。</p>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16730603%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">30位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2513/9784065242513_1_3.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ちいかわ　なんか小さくてかわいいやつ（2） （ワイドKC） [ ナガノ ]</div>
+        <div class="price">1,210円</div>
+        <div class="meta">楽天ブックス　レビュー45件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18647298%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">29位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6917/9784049026917_1_8.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">キャラぱふぇ ちいかわアクリルスタンプ特大号 （角川SSCムック）</div>
+        <div class="price">1,540円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18694979%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">28位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3363/9784529073363_1_3.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">かぎ針で編む　ハローキティ （アップルミンツ） [ 寺西　恵里子 ]</div>
+        <div class="price">1,870円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16997201%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">27位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6113/9784065266113_1_4.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ちいかわ　なんか小さくてかわいいやつ（3） （ワイドKC） [ ナガノ ]</div>
+        <div class="price">1,210円</div>
+        <div class="meta">楽天ブックス　レビュー45件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17697011%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">26位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9824/9784065339824.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ちいかわ　なんか小さくてかわいいやつ（6） （ワイドKC） [ ナガノ ]</div>
+        <div class="price">1,210円</div>
+        <div class="meta">楽天ブックス　レビュー47件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18664245%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">25位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3745/9784910053745_1_67.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">良い子でいたら幸せになれるんじゃなかったのかよ [ 白瀬 世奈 ]</div>
+        <div class="price">1,760円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18765592%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">24位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4350/9784065454350.gif?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ミニクリアファイル付き　転生したらスライムだった件（33）　特装版 （講談社キャラクターズA） [ 川上 泰樹 ]</div>
+        <div class="price">1,980円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17133893%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">23位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6500/9784065286500_1_2.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ちいかわ　なんか小さくてかわいいやつ（4） （ワイドKC） [ ナガノ ]</div>
+        <div class="price">1,210円</div>
+        <div class="meta">楽天ブックス　レビュー44件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18662156%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">22位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7832/9784391167832_1_2.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">MAZZEL 1st photobook with ZEAL [ MAZZEL ]</div>
+        <div class="price">4,950円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18772919%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">21位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">アオアシ ブラザーフット（3） （ビッグ コミックス） [ 小林 有吾 ]</div>
+        <div class="price">770円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18035366%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">20位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5440/9784065375440_1_2.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ちいかわ　なんか小さくてかわいいやつ（7） （ワイドKC） [ ナガノ ]</div>
+        <div class="price">1,375円</div>
+        <div class="meta">楽天ブックス　レビュー42件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16800841%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">19位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0808/9784048970808_1_2.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">メメント・モリ [ 大森　元貴 ]</div>
+        <div class="price">1,980円</div>
+        <div class="meta">楽天ブックス　レビュー51件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q2zmo.1ae4te8a.g00q2zmo.1ae4u409/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbooks-sanseido%2F9784099416775%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">18位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/books-sanseido/cabinet/books/9784099416775.gif?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">タッチペンで音が聞ける！ はじめてずかん1000 英語つき はじめて図鑑1000 はじめてのずかん こども 子ども 0歳 1歳 2歳 3歳 4歳 小学館 タッチペン 図鑑 ずかん はじめて 英語 プレゼント クリスマス お祝い 知育玩具 英語教育</div>
+        <div class="price">5,478円</div>
+        <div class="meta">三省堂書店　レビュー294件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18719064%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">17位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2532/9784087902532_1_34.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">永瀬廉 ファースト写真集（仮） [ 永瀬廉 ]</div>
+        <div class="price">3,960円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16353156%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">16位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6775/9784099416775_1_37.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">タッチペンで音が聞ける！はじめてずかん1000 英語つき [ 小学館 ]</div>
+        <div class="price">5,478円</div>
+        <div class="meta">楽天ブックス　レビュー1,737件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q2zmo.1ae4te8a.g00q2zmo.1ae4u409/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbooks-sanseido%2Fb-9784065223963-set%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">15位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/books-sanseido/cabinet/books/c/ciikawa7.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ちいかわ なんか小さくてかわいいやつ 1巻～7巻 コミックセット【 新品 】ナガノ 講談社 ハチワレ うさぎ かわいい 楽しい 切ない 描きおろしエピソード Twitter ツイッター X エックス コミック アニメ 漫画 セット 全巻 ギフト 贈り物 プレゼント クリスマス</div>
+        <div class="price">8,525円</div>
+        <div class="meta">三省堂書店　レビュー13件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18721182%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">14位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0961/4912024730961.gif?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">Cut (カット) 2026年 9月号 [雑誌]</div>
+        <div class="price">980円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18773031%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">13位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ワールドトリガー 30 （ジャンプコミックス） [ 葦原 大介 ]</div>
+        <div class="price">594円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qci0o.1ae4t9b5.g00qci0o.1ae4u405/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmangazenkan%2Fm2560436932-ex008%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">12位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0066/m2560436932-ex008_01.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">[11月上旬より発送予定][新品]ちいかわ なんか小さくてかわいいやつ(8) なんか人魚の島のひみつのふせん&amp;ノートBOX付き特装版[入荷予約]</div>
+        <div class="price">4,400円</div>
+        <div class="meta">漫画全巻ドットコム 楽天市場店　レビュー3件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qci0o.1ae4t9b5.g00qci0o.1ae4u405/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmangazenkan%2Fm2560436932%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">11位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mangazenkan/cabinet/syncip_0066/m2560436932_01.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">[9月上旬より発送予定][新品]ちいかわ なんか小さくてかわいいやつ (1-8巻 最新刊) 全巻セット [入荷予約]</div>
+        <div class="price">9,900円</div>
+        <div class="meta">漫画全巻ドットコム 楽天市場店　レビュー11件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18765181%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">10位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8748/9784824018748.gif?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ポケットモンスター ビジュアルアートブック 30th anniversary Art Book of Pokemon Video Games developed by GAME FREAK　BOOK2（-） （ポケモン　ポケモン） [ 元宮秀介 ]</div>
+        <div class="price">5,500円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18765176%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">9位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8755/9784824018755.gif?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ポケットモンスター ビジュアルアートブック 30th anniversary Art Book of Pokemon Video Games developed by GAME FREAK　BOOK3（-） （ポケモン　ポケモン） [ 元宮秀介 ]</div>
+        <div class="price">5,500円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18765179%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">8位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8731/9784824018731.gif?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ポケットモンスター ビジュアルアートブック 30th anniversary Art Book of Pokemon Video Games developed by GAME FREAK　BOOK1（-） （ポケモン　ポケモン） [ 元宮秀介 ]</div>
+        <div class="price">5,500円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18681481%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">7位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2674/9784088942674_1_21.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">キングダム 80 （ヤングジャンプコミックス） [ 原 泰久 ]</div>
+        <div class="price">770円</div>
+        <div class="meta">楽天ブックス　レビュー2件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18767964%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">6位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3392/9784065443392.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">プーさんへ　羽生結弦とくまのプーさん　メモリーブック　きせかえ衣装プーぬいぐるみ付き [ 講談社 ]</div>
+        <div class="price">22,000円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18720788%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">5位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6000/2100015096000_1_2.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【楽天ブックス限定特典】GIANNA Plus #11 cover モナキ(オリジナルステッカー)</div>
+        <div class="price">1,980円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rd1do.1ae4t9df.g00rd1do.1ae4ua71/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbooxstore%2Fbk-419210010x%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">4位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/booxstore/cabinet/00154/bk419210010x.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【3千円以上送料無料】風の谷のナウシカ アニメージュ・コミックス・ワイド判 7巻セット／宮崎駿</div>
+        <div class="price">4,367円</div>
+        <div class="meta">bookfan 1号店 楽天市場店　レビュー35件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18664673%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">3位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1327/9784163921327_1_14.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">永遠の記憶 [ 東野 圭吾 ]</div>
+        <div class="price">2,310円</div>
+        <div class="meta">楽天ブックス　レビュー28件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F1606052%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">2位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0106/9784192100106.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">風の谷のナウシカ（7巻セット） トルメキア戦役バージョン （アニメージュコミックスワイド版）</div>
+        <div class="price">4,367円</div>
+        <div class="meta">楽天ブックス　レビュー1,716件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q072o.1ae4t791.g00q072o.1ae4uedd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18719065%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">1位</div>
+      <div class="thumb"><img src="https://r.r10s.jp/evt/event/ranking/img/share/200308/nopicture_128.gif" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">永瀬廉 プレミアムBOX【初回限定版】（仮） [ 永瀬廉 ]</div>
+        <div class="price">8,800円</div>
+        <div class="meta">楽天ブックス</div>
+      </div>
+    </a></main>
+<footer>
+  最終更新: 2026年08月17日 14:07　価格・在庫は変動します。最新情報はリンク先（楽天市場）でご確認ください。<br>
+  &copy; 2026 今週の売れ筋ランキング
+</footer>
+</body>
+</html>

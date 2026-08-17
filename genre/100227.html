@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>食品 売れ筋ランキング｜今週の売れ筋ランキング</title>
+<meta name="description" content="楽天市場の食品ジャンルで今売れている商品ランキング。順位変動つきで毎日自動更新。">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+         background: #f5f5f7; color: #222; line-height: 1.5; }
+  a { color: inherit; }
+  header { background: #bf0000; color: #fff; padding: 18px 16px; text-align: center; }
+  header h1 { font-size: 22px; } header h1 a { text-decoration: none; }
+  header p { font-size: 13px; opacity: .9; margin-top: 4px; }
+  .pr { background: #fff3cd; color: #664d03; font-size: 12px; text-align: center; padding: 6px; }
+  .demo { background: #cfe2ff; color: #084298; font-size: 13px; text-align: center; padding: 8px; }
+  nav { background: #fff; border-bottom: 1px solid #e5e5e5; overflow-x: auto; white-space: nowrap;
+        padding: 8px 12px; -webkit-overflow-scrolling: touch; }
+  nav a { display: inline-block; font-size: 13px; padding: 5px 11px; margin-right: 6px;
+          border-radius: 16px; background: #f0f0f2; text-decoration: none; }
+  nav a.on, nav a:hover { background: #bf0000; color: #fff; }
+  main { max-width: 900px; margin: 0 auto; padding: 16px; }
+  h2 { font-size: 18px; margin: 18px 0 10px; border-left: 5px solid #bf0000; padding-left: 8px; }
+  .lead { font-size: 13px; color: #555; background: #fff; border-radius: 8px; padding: 10px 12px;
+          margin-bottom: 12px; }
+  .updated { font-size: 12px; color: #666; text-align: right; margin-bottom: 8px; }
+  .card { display: flex; gap: 12px; background: #fff; border-radius: 10px; padding: 12px;
+          margin-bottom: 10px; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.15); }
+  .rank { font-weight: bold; color: #bf0000; min-width: 44px; font-size: 15px; }
+  .rank small { display: block; font-size: 11px; font-weight: normal; margin-top: 2px; }
+  .up { color: #d9480f; } .down { color: #1971c2; } .new { color: #2b8a3e; } .same { color: #999; }
+  .thumb img, .noimg { width: 90px; height: 90px; object-fit: contain; background: #fafafa;
+                       border-radius: 6px; }
+  .noimg { display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 11px; }
+  .info { flex: 1; min-width: 0; }
+  .name { font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical; overflow: hidden; }
+  .price { color: #bf0000; font-weight: bold; font-size: 16px; margin-top: 6px; }
+  .meta { font-size: 12px; color: #888; margin-top: 2px; }
+  .badge { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px;
+           background: #ffe8cc; color: #d9480f; margin-left: 6px; }
+  .badge.streak { background: #fff3bf; color: #a07800; }
+  .badge.genre { background: #e7f5ff; color: #1971c2; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .grid a { background: #fff; border-radius: 8px; padding: 10px; font-size: 13px;
+            text-decoration: none; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .grid a:hover { background: #bf0000; color: #fff; }
+  .more { display: block; text-align: center; margin: 8px 0 16px; font-size: 14px; }
+  footer { text-align: center; font-size: 12px; color: #888; padding: 24px 16px; }
+</style>
+</head>
+<body>
+<div class="pr">【PR】当サイトはアフィリエイト広告（楽天アフィリエイト）を利用しています</div>
+<header>
+  <h1><a href="../index.html">今週の売れ筋ランキング</a></h1>
+  <p>楽天市場の売れ筋を毎日自動更新。順位の変動・急上昇がひと目でわかります</p>
+</header>
+
+<nav><a href="../index.html">総合</a><a href="../rise.html">急上昇</a><a href="../genre/100371.html">レディースファッション</a><a href="../genre/551177.html">メンズファッション</a><a href="../genre/100433.html">インナー・下着・ナイトウェア</a><a href="../genre/216131.html">バッグ・小物・ブランド雑貨</a><a href="../genre/558885.html">靴</a><a href="../genre/558929.html">腕時計</a><a href="../genre/216129.html">ジュエリー・アクセサリー</a><a href="../genre/100533.html">キッズ・ベビー・マタニティ</a><a href="../genre/566382.html">おもちゃ</a><a href="../genre/101070.html">スポーツ・アウトドア</a><a href="../genre/562637.html">家電</a><a href="../genre/211742.html">TV・オーディオ・カメラ</a><a href="../genre/100026.html">パソコン・周辺機器</a><a href="../genre/564500.html">スマートフォン・タブレット</a><a href="../genre/565004.html">光回線・モバイル通信</a><a href="../genre/100227.html" class=on>食品</a><a href="../genre/551167.html">スイーツ・お菓子</a><a href="../genre/100316.html">水・ソフトドリンク</a><a href="../genre/510915.html">ビール・洋酒</a><a href="../genre/510901.html">日本酒・焼酎</a><a href="../genre/100804.html">インテリア・寝具・収納</a><a href="../genre/215783.html">日用品雑貨・文房具・手芸</a><a href="../genre/558944.html">キッチン用品・食器・調理器具</a><a href="../genre/200162.html">本・雑誌・コミック</a><a href="../genre/101240.html">CD・DVD</a><a href="../genre/101205.html">テレビゲーム</a><a href="../genre/101164.html">ホビー</a><a href="../genre/112493.html">楽器・音響機器</a><a href="../genre/101114.html">車・バイク</a><a href="../genre/503190.html">車用品・バイク用品</a></nav><main><div class="updated">最終更新: 2026年08月17日 14:07</div><h2>食品 売れ筋ランキング</h2><p class="lead">楽天市場「食品」ジャンルの売れ筋。掲載30商品、価格帯 1,560円〜12,080円（中央値 4,800円）。</p>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rxaro.1ae4tadb.g00rxaro.1ae4u42d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffuchigami%2F10000062%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">30位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/fuchigami/cabinet/rakurip/kome/hoho-saisyu-30.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【期間限定！特別価格！～8/21(金)09:59まで！】 米 30kg 令和7年産米入り 訳あり ほほえみ米 お米マイスター厳選米 米 30kg 送料無料 白米 30kg 送料無料 米 30kg 無洗米 30kg お米30キロ 西日本産 こめたつ 備蓄用</div>
+        <div class="price">12,080円</div>
+        <div class="meta">こめたつ　レビュー7,861件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rxaro.1ae4tadb.g00rxaro.1ae4u42d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffuchigami%2Fhohoemi-30%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">29位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/fuchigami/cabinet/rakurip/kome/hoho-saisyu-20.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【期間限定！特別価格！～8/21(金)09:59まで！】米 20kg 令和7年産米入り 訳あり ほほえみ米 お米マイスター厳選 米 20kg 送料無料 白米 20kg 送料無料 米 20kg 無洗米 20kg お米20キロ 西日本産 こめたつ 備蓄用 非常用</div>
+        <div class="price">8,080円</div>
+        <div class="meta">こめたつ　レビュー1,055件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00qemeo.1ae4t893.g00qemeo.1ae4u076/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanzai-rice%2Ftanbo10%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">28位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/anzai-rice/cabinet/02207291/03108143/r7-t10.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【8/12～16 ポイント3倍】【お盆セール】10kg お米 白米 安い 訳あり ブレンド米 送料無料 『国内産たんぼだより白米10kg』</div>
+        <div class="price">4,280円</div>
+        <div class="meta">まんま屋　レビュー5,120件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r7hio.1ae4taff.g00r7hio.1ae4uc82/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsanchokudayori%2F127932434%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">27位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/sanchokudayori/cabinet/fruits13/grape154_0.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【ダイヤモンド・プラチナ会員限定クーポン配布中】山梨県産　JAふえふき 大型シャインマスカット 青秀品 1.2キロ（2房）送料無料 ぶどう ブドウ 種なしぶどう クール便発送</div>
+        <div class="price">4,980円</div>
+        <div class="meta">産直だより　レビュー3,700件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r6xco.1ae4t665.g00r6xco.1ae4u7dd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyusyukome%2Fk01310m%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">26位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kyusyukome/cabinet/r7/k01310mr7a.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【令和7年産九州産】送料無料 無洗米 洗わんでよかよ10kg(5kg×2袋)【沖縄・北海道は別途送料プラス500円】</div>
+        <div class="price">5,980円</div>
+        <div class="meta">九州米大将　レビュー7,612件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rxaro.1ae4tadb.g00rxaro.1ae4u42d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffuchigami%2F10000003%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">25位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/fuchigami/cabinet/rakurip/kome/hino-saisyu-10.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【在庫処分価格！】 米 10kg 令和7年 熊本県産 ヒノヒカリ ひのひかり 米 10kg 送料無料 白米 10kg 送料無料 お米 10kg 無洗米 送料無料 10キロ こめたつ 備蓄用 非常用 あす楽</div>
+        <div class="price">4,880円</div>
+        <div class="meta">こめたつ　レビュー8,862件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rxaro.1ae4tadb.g00rxaro.1ae4u42d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffuchigami%2Fkoshi-srv10%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">24位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/fuchigami/cabinet/srv/koshi/r8-ckoshi-smn-10.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【令和8年産 新米入荷！】 米 10kg 令和8年産 ちょっぴりセレブなコシヒカリ コシヒカリ 10kg 送料無料 米 10kg 送料無料 白米 10kg 送料無料 お米 10kg 無洗米 10キロ 国内産 こめたつ 備蓄用</div>
+        <div class="price">5,680円</div>
+        <div class="meta">こめたつ　レビュー1,419件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r77to.1ae4t4eb.g00r77to.1ae4uc5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F201101%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">23位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kouragumi/cabinet/10531638/imgrc0114997852.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">お試し送料無料2,499円〜更に2個で600円OFF！3個で1,200円OFF！4個で2,000円OFF！ 楽天グルメ大賞受賞！楽天1位 国産 うなぎ蒲焼き ウナギ お中元 ギフト 土用丑の日【P】</div>
+        <div class="price">2,499円</div>
+        <div class="meta">越前かに職人甲羅組（DENSHOKU）　レビュー12,399件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3u4o.1ae4t15d.g00t3u4o.1ae4u22c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdining-shioso%2Fsakekirimi-1000%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">22位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dining-shioso/cabinet/09036675/11416841/sakekirimi-1000-4.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【期間限定P3倍！期間限定クーポンで50％OFF＆2個で55％OFF！】 銀鮭 切り身 肉厚 10切れ 【7種から選べる】 加熱用 サケ 鮭 厚切り さけ 冷凍 家庭用 お弁当用 お弁当 おかず 惣菜 お惣菜 冷凍食品 冷凍総菜 お中元 御中元</div>
+        <div class="price">6,998円</div>
+        <div class="meta">港ダイニングしおそう　レビュー4,193件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00pwdgo.1ae4t99f.g00pwdgo.1ae4u1b9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsuya%2Fus30%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">21位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/matsuya/cabinet/imgrc0118032579.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">S【1食203円~！クーポン利用で最大57％OFF！】今だけ牛めしバーガー1食おまけ付き（8/1~8/16 迄）大容量リピ確定BOX 松屋 公式 牛めしの具（プレミアム仕様）選択制 牛めし 牛丼の具 まつや 牛丼 食品 グルメ 冷凍 冷凍食品 送料無料 おかず 惣菜 お弁当 非常食 セール 半額</div>
+        <div class="price">5,999円</div>
+        <div class="meta">松屋フーズ　レビュー13,990件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00plxio.1ae4t918.g00plxio.1ae4u68a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjcrops%2F10001511%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">20位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/jcrops/cabinet/157.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ポイント5倍 8/16(日)23：59まで 令和7年産 福島県産ひとめぼれ 白米 送料無料 5kg 10kg 15kg 20kg 30kg 米 お米 白米 コメ こめ 白米 5kg 白米 10kg 白米 15kg 白米 20kg 白米 30kg</div>
+        <div class="price">3,299円</div>
+        <div class="meta">会津CROPS米直販・楽天市場店　レビュー20,637件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r77to.1ae4t4eb.g00r77to.1ae4uc5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F200109%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">19位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kouragumi/cabinet/10531638/imgrc0114997849.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">お試し送料無料2,999円！背ワタ無し♪希少な特大むきえび1kg（解凍後800g） お中元 ギフト プレゼント 【P】</div>
+        <div class="price">2,999円</div>
+        <div class="meta">越前かに職人甲羅組（DENSHOKU）　レビュー7,670件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00uwhjo.1ae4t85c.g00uwhjo.1ae4uf1a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftenma-farm%2Fmasshigura-hakumai10%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">18位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/tenma-farm/cabinet/event/event_thumb/masshigura-hakumai10.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">《お米10キロ 4,800円★生活応援価格》まっしぐら 青森県産 令和7年産 10kg 白米 精米 国産 農家直送 一等米 お中元</div>
+        <div class="price">4,800円</div>
+        <div class="meta">天間ファーム　楽天市場店　レビュー36件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00sc9po.1ae4t37b.g00sc9po.1ae4uc6e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyoshinoya-shop%2F666508%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">17位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yoshinoya-shop/cabinet/gyuudon/666508.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">吉野家 公式 【冷凍】大盛牛丼の具(160g)×30袋セット【送料込】 簡単 便利 夜食 おつまみ 昼ごはん ストック 冷凍食品 お弁当 おかず クール宅急便 取り寄せ グルメ 牛丼</div>
+        <div class="price">10,990円</div>
+        <div class="meta">吉野家公式ショップ楽天市場店　レビュー90件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00sb32o.1ae4t97a.g00sb32o.1ae4u10d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fokaman%2F10000013%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">16位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/okaman/cabinet/additional/06908838/imgrc0089390942.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【1袋あたり2,247円から！】令和7年産 ひのひかり 岡山県産 精米 無洗米 米 お米 送料無料</div>
+        <div class="price">2,480円</div>
+        <div class="meta">ももたろう印の岡萬　楽天市場店　レビュー1,531件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00plxio.1ae4t918.g00plxio.1ae4u68a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjcrops%2F677723%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">15位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/jcrops/cabinet/imgrc0117201185.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ポイント5倍 8/16(日)23：59まで 令和7年産 福島県産コシヒカリ 白米 送料無料 5kg 10kg 20kg 30kg 米 お米 白米 コメ こめ 白米 5kg 白米 10kg 白米 20kg 白米 30kg</div>
+        <div class="price">3,699円</div>
+        <div class="meta">会津CROPS米直販・楽天市場店　レビュー38,878件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00thooo.1ae4tbd8.g00thooo.1ae4u08f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkomatirain%2F10000001%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">14位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/komatirain/cabinet/12121955/otasuke_sku.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【お助け米】令和7年産 あきたこまち 家計お助け米 農家直送便 5kg 10kg (5kg×2袋) 20kg (5kg×4袋) 27kg 米びつ当番【天鷹唐辛子】プレゼント付き</div>
+        <div class="price">3,523円</div>
+        <div class="meta">こまちライン　レビュー6,129件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00q4kso.1ae4t812.g00q4kso.1ae4u194/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhseason%2F865804%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">13位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/hseason/cabinet/00208353/04325330/mu_komachi_ha_10k_t2.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">[7年産売尽くしセール]令和7年産 無洗米 山形県産 あきたこまち10kg 5kg×2袋 送料無料 【SOA受賞】[年間ランキング グルメ大賞]Shop Of The Year 米大賞 ハーベストシーズン[沖縄離島等一部地域は別途送料760円]</div>
+        <div class="price">5,950円</div>
+        <div class="meta">ハーベストシーズン　レビュー65,227件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00uqzro.1ae4tbb1.g00uqzro.1ae4ue7a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakutenoriginal-daily%2Fro-f-001%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">12位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/rakutenoriginal-daily/cabinet/item/rice/item_jbr_2606_01.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">クーポン利用で10kg 4,980円【楽天オリジナル】令和7年産 ブレンド米 5kg ～ 10kg お米 白米 国産 家計応援 まとめ買い お弁当 業務用 送料無料</div>
+        <div class="price">3,150円</div>
+        <div class="meta">楽天オリジナル　レビュー267件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r77to.1ae4t4eb.g00r77to.1ae4uc5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F200240%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">11位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kouragumi/cabinet/10531638/imgrc0114997855.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">赤字覚悟のお試し送料無料4,999円！北海道産の【訳あり】割れ/不揃い/小サイズ 生ほたて貝柱どっさり1kg 帆立 ホタテ ほたて【P】</div>
+        <div class="price">4,999円</div>
+        <div class="meta">越前かに職人甲羅組（DENSHOKU）　レビュー14,529件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00sb0mo.1ae4t63c.g00sb0mo.1ae4u5a6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkingfoods%2F238sanukisalmon%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">10位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kingfoods/cabinet/11678586/2511_238sanukisalmon.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【クーポンご利用で半額！】オリーブサーモン フィーレ1kg 送料無料 国産 刺身 炙り フライ あぶり さーもん サーモン トラウトサーモン ギフト オリーブ 天ぷら 海鮮 美味しい 贈答品 お取り寄せ おつまみ お魚生活すすめ隊 あき水産魚活部 安岐水産</div>
+        <div class="price">11,600円</div>
+        <div class="meta">あき水産魚活部　レビュー55件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00rxaro.1ae4tadb.g00rxaro.1ae4u42d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffuchigami%2F10000061%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">9位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/fuchigami/cabinet/rakurip/kome/hoho-saisyu-10.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【期間限定！特別価格！～8/21(金)09:59まで！】 米 10kg 令和7年産米入り 訳あり ほほえみ米 お米マイスター厳選米 米 10kg 送料無料 白米 10kg 送料無料 お米 10kg 無洗米 送料無料 10キロ 西日本産 こめたつ 備蓄用 あす楽</div>
+        <div class="price">4,200円</div>
+        <div class="meta">こめたつ　レビュー8,464件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00plxio.1ae4t918.g00plxio.1ae4u68a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjcrops%2F4562129938344-2%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">8位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/jcrops/cabinet/2-ra.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">ポイント5倍 8/16(日)23：59まで ALL令和7年産 きらっとごはん 白米 脱酸素剤入り白米 無洗米 玄米 送料無料 5kg 10kg 15kg 20kg 30kg 60kg 120kg 米 お米 白米 無洗米 玄米 コメ こめ 白米 5kg 白米 10kg 白米 15kg 白米 20kg 白米 30kg 白米 60kg 白米 120kg</div>
+        <div class="price">2,999円</div>
+        <div class="meta">会津CROPS米直販・楽天市場店　レビュー7,375件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00uagxo.1ae4tc89.g00uagxo.1ae4ubce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnishikiya-kitchen%2F10000010%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">7位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/nishikiya-kitchen/cabinet/itempage/10000010curry/se_curry2608_01.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">★15日限定！ポイント5倍★【お試し】カレー食べ比べお試しセット(2食～6食) / ニシキヤキッチン にしきや レトルト 送料無料 常温 保存 スープカレー 角煮 ポークカレー 備蓄 防災 日持ち 甘口 辛口 ギフト 詰め合わせ</div>
+        <div class="price">1,560円</div>
+        <div class="meta">公式NISHIKIYA KITCHEN楽天市場店　レビュー795件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00sl9eo.1ae4t4fa.g00sl9eo.1ae4ube0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcerestshop%2F201090%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">6位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/cerestshop/cabinet/bread/bread2/364740_02f.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">5種類選べるベーグル15個セット[各3個×5種]［冷凍のみ]【送料無料】【3〜4営業日以内に出荷】[B]</div>
+        <div class="price">6,960円</div>
+        <div class="meta">セレスト（cerest）　レビュー834件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r77to.1ae4t4eb.g00r77to.1ae4uc5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F210069%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">5位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kouragumi/cabinet/10531638/imgrc0114997933.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">お試し送料無料2,990円～「有塩or無塩」「骨ありor骨なし」が選べる！⇒脂のり抜群の銀鮭 切り身 業務用 1kg お試し お中元 ギフト プレゼント 【P】</div>
+        <div class="price">2,990円</div>
+        <div class="meta">越前かに職人甲羅組（DENSHOKU）　レビュー4,691件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00t3zto.1ae4tdf1.g00t3zto.1ae4u9bb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Firisplaza-r%2F113800%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">4位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/irisplaza-r/cabinet/12351902/imgrc0120697447.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">＼1袋あたり2,327円〜！／【令和7年産100％使用】白米 無洗米 和の輝き ブレンド米 10kg (5kg×2袋) 15kg (5kg×3袋) 密封新鮮パック 脱酸素剤入り 米 お米 国産 10キロ 15キロ 低温製法米 送料無料 アイリスオーヤマ</div>
+        <div class="price">4,980円</div>
+        <div class="meta">アイリスオーヤマ公式 楽天市場店　レビュー6,274件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00uhmzo.1ae4te06.g00uhmzo.1ae4ue2f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyama-oatmeal-institute%2Fkiwamiseimai10%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">3位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/yama-oatmeal-institute/cabinet/13044696/imgrc0127109405.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">[2026年 楽天上半期ランキング1位] 令和7年産 ブレンド米 極味精米 10kg ( きわみせいまい こめ お米 米 白米 全国 送料無料 （北海道 沖縄 離島含む） ブレンド米 安い 生活応援米 備蓄米 不使用 10キロ 5キロ ) 山川食糧</div>
+        <div class="price">4,480円</div>
+        <div class="meta">山川食糧オートミール研究所　レビュー6,041件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00uaejo.1ae4tecb.g00uaejo.1ae4u879/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fexception5251%2Fex-x01028%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">2位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/exception5251/cabinet/11219683/11219687/main_image/ex-x01028_a.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">【新米予約受付中】令和8年産（予約）・令和7年産 徳島県産 コシヒカリ 令和7年産 一等米 単一原料米 新米 白米 5kg 10kg 送料無料 米 お米 国産 ブレンド米ではありません 家庭用 大容量 定食 ご飯 ハンバーグ とんかつ 粘り ふっくら ex-x01028</div>
+        <div class="price">3,299円</div>
+        <div class="meta">EXCEPTION本店　レビュー178件</div>
+      </div>
+    </a>
+    <a class="card" href="https://hb.afl.rakuten.co.jp/hgc/g00r77to.1ae4t4eb.g00r77to.1ae4uc5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F201175%2F&amp;rafcid=wsc_i_ra_7a5a7ee1-eab7-4242-84f1-094cbd9b851d" target="_blank" rel="nofollow sponsored noopener">
+      <div class="rank">1位</div>
+      <div class="thumb"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kouragumi/cabinet/10531638/imgrc0114997850.jpg?_ex=300x300" alt="" loading="lazy"></div>
+      <div class="info">
+        <div class="name">お試し送料無料2,490円～ 骨取りサバ切身 1kg 無塩or有塩が選べる♪骨とり 骨なし 鯖 さば 冷凍食品 お中元 ギフト 【P】</div>
+        <div class="price">2,490円</div>
+        <div class="meta">越前かに職人甲羅組（DENSHOKU）　レビュー18,638件</div>
+      </div>
+    </a></main>
+<footer>
+  最終更新: 2026年08月17日 14:07　価格・在庫は変動します。最新情報はリンク先（楽天市場）でご確認ください。<br>
+  &copy; 2026 今週の売れ筋ランキング
+</footer>
+</body>
+</html>
