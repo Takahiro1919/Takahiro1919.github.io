@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://takahiro1919.github.io/sitemap.xml
