@@ -41,37 +41,42 @@ img{max-width:100%;display:block}
 /* レイアウト（左メニュー＋本文） */
 .layout{max-width:1200px;margin:0 auto;padding:0 16px 40px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:32px;align-items:start}
 .side{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow-y:auto;scrollbar-width:thin;padding-top:14px}
-.side .box{border:1px solid var(--line);margin-bottom:14px}
-.side .box a{display:flex;align-items:center;gap:8px;padding:10px 12px;font-size:13px;font-weight:500;border-bottom:1px solid var(--line);position:relative}
-.side .box a:last-child{border-bottom:none}
-.side .box a:after{content:"›";position:absolute;right:12px;color:#999;font-size:16px}
-.side .box a:hover,.side .box a.on{color:var(--pink);background:var(--pink-l)}
-.side .box a .ic{width:20px;text-align:center}
-.side .box a.pk{color:var(--pink);font-weight:700}
-.side .cap{font-size:11px;color:var(--sub);letter-spacing:.12em;padding:0 2px 6px}
-.side .cap .en{font-size:20px;color:#333;letter-spacing:0;margin-right:6px}
+.side .box,.drawer .box{border:1px solid var(--line);margin-bottom:14px}
+.side .box a,.drawer .box a{display:flex;align-items:center;gap:8px;padding:10px 12px;font-size:13px;font-weight:500;border-bottom:1px solid var(--line);position:relative}
+.side .box a:last-child,.drawer .box a:last-child{border-bottom:none}
+.side .box a:after,.drawer .box a:after{content:"›";position:absolute;right:12px;color:#999;font-size:16px}
+.side .box a:hover,.side .box a.on,.drawer .box a.on{color:var(--pink);background:var(--pink-l)}
+.side .box a .ic,.drawer .box a .ic{width:20px;text-align:center}
+.side .box a.pk,.drawer .box a.pk{color:var(--pink);font-weight:700}
+.side .cap,.drawer .cap{font-size:11px;color:var(--sub);letter-spacing:.12em;padding:0 2px 6px}
+.side .cap .en,.drawer .cap .en{font-size:20px;color:#333;letter-spacing:0;margin-right:6px}
 .content{min-width:0;padding-top:14px}
 .prnote{font-size:9px;color:#bbb;text-align:right;margin:-8px 0 2px;line-height:1.2}
 .crumb{font-size:12px;color:var(--sub);margin:0 0 14px}
 .crumb a:hover{text-decoration:underline}
 /* バナー */
 .hero{position:relative;overflow:hidden;background:linear-gradient(115deg,#2f2f2f 0%,#4b4b4b 55%,#2a2a2a 100%);color:#fff;
-padding:40px 32px;min-height:250px;display:flex;flex-direction:column;justify-content:center}
-.hero .t1,.hero .t2,.hero .t3{max-width:calc(100% - 400px)}
+padding:40px 32px;min-height:280px;display:flex;flex-direction:column;justify-content:center}
+.hero .t1,.hero .t2,.hero .t3{max-width:calc(100% - 520px)}
 .hero .t1{font-size:32px;font-weight:300;letter-spacing:.2em;line-height:1.15;text-transform:uppercase}
 .hero .t2{font-size:22px;font-weight:500;letter-spacing:.14em;margin-top:14px}
 .hero .t3{font-size:12px;opacity:.85;margin-top:8px;letter-spacing:.06em}
-.hero .imgs{position:absolute;right:26px;top:50%;transform:translateY(-50%);display:flex;gap:10px}
-.hero .imgs span{width:118px;height:118px;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.4);display:block;position:relative}
-.hero .imgs span a{position:absolute;inset:0;opacity:0;animation:heroFade 16s infinite}
+.hero .imgs{position:absolute;right:26px;top:46%;transform:translateY(-50%);display:flex;gap:12px}
+.hero .imgs span{width:150px;height:150px;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.4);display:block;position:relative;border:2px solid #fff;transition:transform .2s,box-shadow .2s}
+.hero .imgs span:hover{box-shadow:0 0 0 3px var(--pink),0 10px 28px rgba(0,0,0,.5)}
+.hero .imgs span a{position:absolute;inset:0;opacity:0;animation:heroFade 16s infinite;cursor:pointer;background:#fff}
 .hero .imgs span a:only-child{opacity:1;animation:none}
-.hero .imgs span img{width:100%;height:100%;object-fit:contain}
-.hero .imgs span b{position:absolute;left:0;top:0;background:var(--pink);color:#fff;font-size:10px;font-weight:700;padding:1px 7px;border-radius:0 0 6px 0;font-style:normal}
+.hero .imgs span img{width:100%;height:calc(100% - 22px);object-fit:contain}
+.hero .imgs span b{position:absolute;left:0;top:0;background:var(--pink);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:0 0 8px 0;font-style:normal}
+.hero .imgs span em{position:absolute;left:0;right:0;bottom:0;height:22px;line-height:22px;background:var(--pink);color:#fff;font-size:11px;font-weight:700;font-style:normal;text-align:center;letter-spacing:.04em}
+.hero .imgs span .noimg{display:flex;align-items:center;justify-content:center;height:calc(100% - 22px);padding:8px 10px 0;font-size:11px;line-height:1.5;color:#333;font-style:normal;text-align:center;font-weight:500}
+.hero .tap{position:absolute;right:26px;bottom:12px;font-size:12px;color:#fff;background:rgba(0,0,0,.35);padding:4px 12px;border-radius:14px}
 @keyframes heroFade{0%{opacity:0}4%{opacity:1}25%{opacity:1}29%{opacity:0}100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.hero .imgs span a{animation:none}.hero .imgs span a:first-child{opacity:1}}
-.hero .imgs span:nth-child(1){transform:rotate(-7deg) translateY(10px)}
-.hero .imgs span:nth-child(3){transform:rotate(7deg) translateY(10px)}
-.hero .hand{position:absolute;right:30px;bottom:14px;font-size:20px;color:#ffe066;transform:rotate(-8deg)}
+.hero .imgs span:nth-child(1){transform:rotate(-6deg) translateY(8px)}
+.hero .imgs span:nth-child(3){transform:rotate(6deg) translateY(8px)}
+.hero .imgs span:hover:nth-child(n){transform:scale(1.06)}
+.hero .hand{position:absolute;right:30px;top:12px;font-size:20px;color:#ffe066;transform:rotate(-6deg)}
 .intro-c{text-align:center;max-width:760px;margin:26px auto 0;font-size:14px;line-height:1.9}
 .intro-c h1{font-size:22px;font-weight:700;margin-bottom:12px;letter-spacing:.04em}
 .btn-pink{display:inline-flex;align-items:center;justify-content:center;gap:24px;background:var(--pink);color:#fff;font-weight:700;font-size:15px;
@@ -222,8 +227,11 @@ table.cmp td.pr2{font-weight:700;color:var(--pink);white-space:nowrap}
   .hero .t1,.hero .t2,.hero .t3{max-width:none}
   .hero .t1{font-size:22px;letter-spacing:.14em}
   .hero .t2{font-size:17px}
-  .hero .imgs{position:static;transform:none;margin-top:18px;justify-content:center}
-  .hero .imgs span{width:86px;height:86px}
+  .hero .imgs{position:static;transform:none;margin-top:18px;justify-content:center;gap:8px}
+  .hero .imgs span{width:104px;height:110px}
+  .hero .imgs span em{font-size:10px}
+  .hero .tap{position:static;display:inline-block;margin:16px auto 0;font-size:11px}
+  .hero{text-align:center}
   .hero .hand{display:none}
   .sec .en{font-size:26px} .sec .ja{font-size:16px}
   .rail .ncard{flex-basis:150px}
@@ -248,7 +256,7 @@ table.cmp td.pr2{font-weight:700;color:var(--pink);white-space:nowrap}
 <div class="r"><a href="../about.html">› このサイトについて</a><a href="../blog/index.html">› ブログ</a></div></div></div>
 <div class="header"><div class="in">
   <a class="logo" href="../index.html">今週の売れ筋ランキング<small>楽天市場の売れ筋・話題の商品を毎日自動更新</small></a>
-  <span class="upd">更新 08/17 21:42</span>
+  <span class="upd">更新 08/17 21:49</span>
   <label for="menu" class="burger" aria-label="メニュー">☰</label>
 </div></div>
 <div class="mrow"><a href="../index.html"><span class="ic">🏆</span>総合ランキング</a><a href="../sns.html"><span class="ic">📱</span>SNSで人気</a><a href="../trend.html"><span class="ic">💬</span>今話題</a><a href="../rise.html"><span class="ic">🔥</span>急上昇</a><a href="../blog/index.html"><span class="ic">📝</span>ブログ</a></div>
@@ -512,7 +520,7 @@ table.cmp td.pr2{font-weight:700;color:var(--pink);white-space:nowrap}
   掲載情報は楽天市場の公式ランキングデータをもとに毎日自動更新しています。価格・在庫・ポイント倍率は変動しますので、最新情報は各商品ページ（楽天市場）でご確認ください。<br>
   当サイトは楽天アフィリエイトに参加しており、リンク経由でお買い物いただくと当サイトに紹介料が入ることがあります（購入者の負担が増えることはありません）。<br>
   <a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a><br>
-  最終更新: 2026年08月17日 21:42　&copy; 2026 今週の売れ筋ランキング
+  最終更新: 2026年08月17日 21:49　&copy; 2026 今週の売れ筋ランキング
 </div></footer>
 <label for="menu" class="overlay"></label>
 <nav class="drawer"><label for="menu" class="close">×</label><div class="cap"><span class="en">Menu</span>メニュー</div><div class="box"><a href="../index.html"><span class="ic">🏆</span>総合ランキング</a><a href="../sns.html"><span class="ic">📱</span>SNSで人気</a><a href="../trend.html"><span class="ic">💬</span>今話題</a><a href="../rise.html"><span class="ic">🔥</span>急上昇</a><a href="../blog/index.html"><span class="ic">📝</span>ブログ</a></div><div class="cap"><span class="en">Category</span>ジャンル別</div><div class="box"><a href="../genre/100371.html"><span class="ic">👗</span>レディースファッション</a><a href="../genre/551177.html"><span class="ic">👔</span>メンズファッション</a><a href="../genre/100433.html"><span class="ic">🧦</span>インナー・下着・ナイトウェア</a><a href="../genre/216131.html"><span class="ic">👜</span>バッグ・小物・ブランド雑貨</a><a href="../genre/558885.html"><span class="ic">👟</span>靴</a><a href="../genre/558929.html"><span class="ic">⌚</span>腕時計</a><a href="../genre/216129.html"><span class="ic">💍</span>ジュエリー・アクセサリー</a><a href="../genre/100533.html"><span class="ic">🧸</span>キッズ・ベビー・マタニティ</a><a href="../genre/566382.html"><span class="ic">🪀</span>おもちゃ</a><a href="../genre/101070.html"><span class="ic">⚽</span>スポーツ・アウトドア</a><a href="../genre/562637.html"><span class="ic">🔌</span>家電</a><a href="../genre/211742.html"><span class="ic">📷</span>TV・オーディオ・カメラ</a><a href="../genre/100026.html"><span class="ic">💻</span>パソコン・周辺機器</a><a href="../genre/564500.html" class="on"><span class="ic">📱</span>スマートフォン・タブレット</a><a href="../genre/565004.html"><span class="ic">📶</span>光回線・モバイル通信</a><a href="../genre/100227.html"><span class="ic">🍱</span>食品</a><a href="../genre/551167.html"><span class="ic">🍰</span>スイーツ・お菓子</a><a href="../genre/100316.html"><span class="ic">🥤</span>水・ソフトドリンク</a><a href="../genre/510915.html"><span class="ic">🍺</span>ビール・洋酒</a><a href="../genre/510901.html"><span class="ic">📚</span>日本酒・焼酎</a><a href="../genre/100804.html"><span class="ic">🛋️</span>インテリア・寝具・収納</a><a href="../genre/215783.html"><span class="ic">🧻</span>日用品雑貨・文房具・手芸</a><a href="../genre/558944.html"><span class="ic">🍳</span>キッチン用品・食器・調理器具</a><a href="../genre/200162.html"><span class="ic">📚</span>本・雑誌・コミック</a><a href="../genre/101240.html"><span class="ic">💿</span>CD・DVD</a><a href="../genre/101205.html"><span class="ic">🎮</span>テレビゲーム</a><a href="../genre/101164.html"><span class="ic">🎨</span>ホビー</a><a href="../genre/112493.html"><span class="ic">🎸</span>楽器・音響機器</a><a href="../genre/101114.html"><span class="ic">🚗</span>車・バイク</a><a href="../genre/503190.html"><span class="ic">🚗</span>車用品・バイク用品</a></div><div class="box"><a href="../about.html"><span class="ic">ℹ️</span>このサイトについて</a></div></nav>
